@@ -53,7 +53,7 @@ const Timer = ({deadline, className}) => {
 
 	return (
 		<p className={`${className} text-4xl italic`}>
-			<span className="text">Last Day!  </span>
+			<span className="text">Last Day!</span><br/>
 			{countdown.hours > 0 && <span>{countdown.hours}:</span>}
 			{countdown.minutes.toLocaleString(undefined, {minimumIntegerDigits: 2})}:
 			{countdown.seconds.toLocaleString(undefined, {minimumIntegerDigits: 2})}

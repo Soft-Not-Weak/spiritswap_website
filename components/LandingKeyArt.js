@@ -9,17 +9,120 @@ const LandingKeyArt = () => (
 		</div>
 		{/* Characters and Logo */}
 		<div className="absolute z-10 w-full h-full overflow-hidden">
-			<img src="/keyart/Samar.png" className="absolute bottom-0 z-10" style={{width: '46%', maxWidth: '704px', minWidth: '514px', right: '-5%'}}/>
-			<img src="/keyart/Dio.png" className="absolute -bottom-5" style={{width: '43%', maxWidth: '628px', minWidth: '500px', right: '18%'}}/>
-			<img src="/keyart/Kedsi.png" className="absolute bottom-0" style={{width: '20%', maxWidth: '298px', minWidth: '232px', left: '6%'}}/>
+			<img src="/keyart/Samar.png" className="samar absolute bottom-0 z-10"/>
+			<img src="/keyart/Dio.png" className="dio absolute -bottom-5"/>
+			<img src="/keyart/Kedsi.png" className="kedsi absolute bottom-0" />
 		</div>
 		{/* Foreground */}
 		<div className="absolute w-full h-full z-10">
-			<img src="/keyart/Fireflies.png" className="absolute h-full w-full object-cover"/>
-			<img src="/keyart/Overlay.png" className="absolute opacity-50 h-full w-full object-cover"/>
-			<img src="/keyart/Bushes_BG.png" className="absolute h-full w-full object-cover object-bottom"/>
-			<img src="/GameLogo.png" className="absolute" style={{width: '30%', minWidth: '500px', maxWidth: '600px', left: '22%', top: '6vw'}}/>
+			<img src="/keyart/Fireflies.png" className="fireflies absolute h-full w-full object-cover"/>
+			<img src="/keyart/Overlay.png" className="overlay absolute opacity-50 h-full w-full object-cover"/>
+			<img src="/keyart/Bushes_BG.png" className="bushes absolute h-full w-full object-cover object-bottom"/>
+			<img src="/GameLogo.png" className="gamelogo absolute"/>
 		</div>
+		<style jsx>
+			{`
+				.gamelogo {
+					width: 30%;
+					min-width: 500px;
+					max-width: 780px;
+					left: 22%;
+					top: 6vw;
+					transform: unset;
+				}
+
+				.samar {
+					width: 46%; 
+					max-width: 704px;
+					min-width: 514px;
+					right: -5%;
+				}
+
+				.dio {
+					width: 43%;
+					max-width: 628px;
+					min-width: 500px;
+					right: 18%;
+				}
+
+				.kedsi {
+					width: 20%;
+					max-width: 298px;
+					min-width: 232px;
+					left: 6%; 
+				}
+
+				@media (max-width: 985px)
+				{
+					.samar {
+						width: 49%;
+						min-width: unset; 
+						right: -7%;
+					}
+
+					.dio {
+						width: 44%;
+						max-width: 628px;
+						min-width: unset;
+						right: 17%; 
+					}
+
+					.kedsi {
+						width: 25%; 
+						max-width: 298px;
+						min-width: unset;
+						left: 6%; 
+					}
+
+					.gamelogo {
+						left: 50%;
+						transform: translateX(-50%);
+					}
+
+					.bushes {
+						width: 100vw;
+						object-fit: contain;
+					}
+	
+					.fireflies {
+						width: 100vw;
+						opacity: 0.32;
+						object-fit: contain;
+					}
+				}
+
+				@media (max-width: 600px) {
+					.samar {
+						width: 74%;
+						right: -24%;
+					}
+
+					.dio {
+						width: 74%;
+						right: 30%;
+						z-index: 0;
+					}
+
+					.kedsi {
+						min-width: unset; 
+						z-index:0;
+						transform: scaleX(-1);
+						width: 45%; 
+						right: 26%;
+						left: unset;
+						bottom: -4%; 
+					}
+
+					.gamelogo {
+						min-width: unset; 
+						width: 100%; 
+						top: 9%; 
+						max-width: 435px;
+					}
+				}
+
+			`}
+		</style>
 	</div>
 )
 
