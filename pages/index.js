@@ -27,53 +27,50 @@ export default function Home() {
           <h1 className="font-header text-6xl mb-12">Wishlist on</h1>
           {/* TODO: Get Steam page link for game. */}
           <Button cursor  bg="rgb(132 63 148 / 35%)" to="https://store.steampowered.com" className="m-auto">
-            <img src="/SteamLogo.svg" className="text-white"/>
+            <img src="/SteamLogo.svg" className="text-white m-auto" style={{maxWidth: '176px'}}/>
           </Button>
         </div>
         <Button alt bg="rgba(26, 14, 51, 0.72)" ultra className="m-auto mb-28" to="https://softnotweak.itch.io/spirit-swap-lofi-beats-to-match-3-to">
             <h1 className="font-header text-4xl p-3">Play the Demo!</h1>
         </Button>
 
-        <img src="/CastSpellsBeQueer.png" className="m-auto mb-6" style={{maxWidth: '1370px'}}/>
+        <img src="/CastSpellsBeQueer.png" className="m-auto w-full mb-6" style={{maxWidth: '1370px'}}/>
         {/* TODO: Insert "Cast Spells, Be Queer" GFX */}
 
         <div className="m-auto mb-7" style={{maxWidth: '1364px'}}>
           <Youtube embed="zo-LEmtSIY4" />
         </div>
 
-        <p className="m-auto text-3xl leading-relaxed" style={{width: '70%'}}>
-          Spirit Swap is an action-puzzle game set in a lush, narrative-driven world of witchy demons. 
-          Samar is a young witch working the spirit-swapping night shift in the eastern outskirts of Demashq. 
-          A recent spike in spirits crossing over from another dimension breaks the chill atmosphere of their night shift. 
-          With her trusty familiarZ by her side, she sets off into the city to find out what’s happened.
+        <p className="m-auto text-3xl leading-relaxed w-full" style={{maxWidth: '1283px'}}>
+          Spirit Swap is an action-puzzle game set in a lush, narrative-driven world of witchy demons.  
         </p>
 
         {/* Features */}
         <div>
           <InfoBlock>
-            {/* TODO: Swap Graphic */}
-            {/* TODO: Footage example */}
+            <img src="/Swap.png"/>
+            <img src="/footage/Swap.gif"/>
             <p>
               Swap to the beat and cast powerful spells as you reassemble lost spirits solo or together with friends!
             </p>
           </InfoBlock>
           <InfoBlock>
-            {/* TODO: Match Graphic */}
-            {/* TODO: Footage example */}
+            <img src="/Match.png"/>
+            <img src="/footage/Match.gif"/>
             <p>
               Match and arrange spirits into special patterns to unlock potent powers!
             </p>
           </InfoBlock>
           <InfoBlock>
-            {/* TODO: Bond Graphic */}
-            {/* TODO: Footage example */}
+            <img src="/Bond.png"/>
+            <img src="/footage/Bond.gif"/>
             <p>
               Bond with a cast of witches and demons. Plan a pizza party together, crash a concert, maybe even smooch!
             </p>
           </InfoBlock>
           <InfoBlock>
-            {/* TODO: Decorate Graphic */}
-            {/* TODO: Footage example */}
+            <img src="/Decorate.png"/>
+            <img src="/footage/Decorate.gif"/>
             <p>
               Decorate your bedroom. Earn trinkets and keepsakes as you play, then place them in Samar’s room to impact your runs!
             </p>

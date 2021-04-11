@@ -63,7 +63,7 @@ const Button  = ({bg, ultra, alt, cursor, children, to, className}) => {
 	if (cursor)
 	{
 		return (
-			<a target="_blank" style={{background: bg, maxWidth: '200px'}} href={to} className={`cursor-button animate-scroll rounded-lg p-3 block ${className}`}>
+			<a target="_blank" style={{background: bg, maxWidth: '364px'}} href={to} className={`cursor-button animate-scroll rounded-lg p-3 block ${className}`}>
 				<div className="cursorEdges absolute w-full h-full top-0 left-0">
 					<img src="/CursorEdge.svg" className="absolute edge"/>
 					<img src="/CursorEdge.svg" className="absolute edge"/>

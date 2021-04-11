@@ -1,8 +1,7 @@
 
-const InfoBlock = ({heading, footage, description}) => (
+const InfoBlock = ({heading, footage, description, children}) => (
 	<div>
-		{/* TODO: Fill in with modular stuff. */}
-
+		{children}
 	</div>
 )
 
