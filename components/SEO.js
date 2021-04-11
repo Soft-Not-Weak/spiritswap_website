@@ -33,6 +33,21 @@ export default function SEO({description, title}) {
 					<meta property="twitter:description" content={config.social.twitter.description || siteDescription} />
 				</>
 			}
+			<meta name='application-name' content={siteTitle} />
+		<meta name='apple-mobile-web-app-capable' content='yes' />
+		<meta name='apple-mobile-web-app-status-bar-style' content='default' />
+		<meta name='apple-mobile-web-app-title' content={siteTitle} />
+		<meta name='description' content={siteDescription} />
+		<meta name='format-detection' content='telephone=no' />
+		<meta name='mobile-web-app-capable' content='yes' />
+		<meta name='msapplication-TileColor' content='#13051c' />
+		<meta name='msapplication-tap-highlight' content='no' />
+		<meta name='theme-color' content='#4b2962' />
+				
+		<link rel='apple-touch-icon' sizes='180x180' href='/icons/apple-touch-icon.png' />
+		<link rel='icon' type='image/png' sizes='32x32' href='/icons/favicon-32x32.png' />
+		<link rel='icon' type='image/png' sizes='16x16' href='/icons/favicon-16x16.png' />
+		<link rel='manifest' href='/manifest.json' />
 		</Head>
 	)
 }

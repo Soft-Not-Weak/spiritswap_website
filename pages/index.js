@@ -18,21 +18,21 @@ export default function Home() {
       <GameboardLayout>
         <div className="mb-24">
           <h1 className="font-header text-6xl mb-6 cta-heading">Support us on</h1> 
-          <Button bg="rgba(26, 14, 51, 0.72)" ultra className="m-auto mb-3" to="https://www.kickstarter.com/projects/softnotweak/spirit-swap">
-            <img src="/KickstarterLogo.svg"/>
+          <Button bg="rgba(26, 14, 51, 0.72)" aria="spirit swap kickstarter" ultra className="m-auto mb-3" to="https://www.kickstarter.com/projects/softnotweak/spirit-swap">
+            <img src="/KickstarterLogo.svg" alt="kickstarter logo"/>
           </Button>
-          <Timer deadline={new Date(2021, 3, 12)} className="z-10"/>
+          <Timer deadline={new Date(2021, 4, 13)} className="z-10"/>
         </div>
         <div className="mb-24"> 
           <h1 className="font-header text-6xl mb-6 cta-heading">Wishlist on</h1>
           {/* TODO: Get Steam page link for game. */}
-          <Button cursor  bg="rgb(132 63 148 / 35%)" to="https://store.steampowered.com" className="m-auto">
-            <img src="/SteamLogo.svg" className="text-white m-auto" style={{maxWidth: '176px'}}/>
+          <Button cursor  bg="rgb(132 63 148 / 35%)" aria="spirit swap steam page" to="https://store.steampowered.com" className="m-auto">
+            <img src="/SteamLogo.svg" alt="steam logo" className="text-white m-auto" style={{maxWidth: '176px'}}/>
           </Button>
         </div>
         <div>
         <h1 className="font-header text-6xl mb-6 cta-heading">Tune in and</h1>
-          <Button alt bg="rgba(26, 14, 51, 0.72)" ultra className="m-auto mb-28" to="https://softnotweak.itch.io/spirit-swap-lofi-beats-to-match-3-to">
+          <Button alt bg="rgba(26, 14, 51, 0.72)" aria="spirit swap demo" ultra className="m-auto mb-28" to="https://softnotweak.itch.io/spirit-swap-lofi-beats-to-match-3-to">
               <h1 className="font-header text-4xl p-3">Play the Demo!</h1>
           </Button>
         </div>
@@ -60,7 +60,7 @@ export default function Home() {
               </span>
             </h1>
             <div className="footage swap">
-              <img src="/footage/Match.gif" className="rounded-xl drop-shadow-2xl object-cover mb-4" />
+              <img src="/footage/Match.gif" alt="match gameplay" className="rounded-xl drop-shadow-2xl object-cover mb-4" />
             </div>
             <p className="text-2xl leading-relaxed">
               Swap to the beat and cast powerful spells as you reassemble lost spirits solo or together with friends (local co-op)!
@@ -73,7 +73,7 @@ export default function Home() {
               </span>
             </h1>
             <div className="footage bond">
-              <img src="/footage/Bond.gif"  className="rounded-xl drop-shadow-2xl object-cover mb-4"/>
+              <img src="/footage/Bond.gif" alt="bond gameplay" className="rounded-xl drop-shadow-2xl object-cover mb-4"/>
             </div>
             <p className="text-2xl leading-relaxed"> 
               Bond with a cast of witches and demons. Plan a pizza party together, crash a concert, maybe even smooch!
@@ -86,7 +86,7 @@ export default function Home() {
               </span>
             </h1>
             <div className="footage style">
-              <img src="/footage/Decorate.gif"  className="rounded-xl drop-shadow-2xl object-cover mb-4"/>
+              <img src="/footage/Decorate.gif" alt="decorate gameplay" className="rounded-xl drop-shadow-2xl object-cover mb-4"/>
             </div>
             <p className="text-2xl leading-relaxed">
               Style and decorate your bedroom with trinkets and keepsakes from your bonds to mixup your runs!
@@ -97,8 +97,8 @@ export default function Home() {
         {/* Music */}
         <div className="music m-auto flex flex-row mb-32">
           <div className="characters relative">
-            <img src="/samar_bop.gif" className="samar absolute h-full object-cover right-0"/>
-            <img src="/frog_bop.gif" className="frog absolute bottom-0"/>
+            <img src="/samar_bop.gif" alt="samar dancing" className="samar absolute h-full object-cover right-0"/>
+            <img src="/frog_bop.gif" alt="frog dancing" className="frog absolute bottom-0"/>
           </div>
           <div className="content text-left flex flex-col justify-around px-5" style={{flex: '2'}}>
             <p className="info text-4xl leading-relaxed">
@@ -107,10 +107,10 @@ export default function Home() {
             </p>
             <div className="flex soundcloud-container">
               <div className="soundcloud  mr-10 flex-1">
-              <iframe className="rounded-lg" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1024044487&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              <iframe className="rounded-lg" title="soundcloud spirit swap theme by meltycanon" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1024044487&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
               </div>
               <div className="soundcloud flex-1">
-              <iframe className="rounded-lg" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1024093933&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              <iframe className="rounded-lg" title="soundcloud sugarplum by eyelovebrandon" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1024093933&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
               </div>
             </div>
           </div>
@@ -125,36 +125,36 @@ export default function Home() {
             </span>
           </h1>
           <div className="info-grid on-beat">
-            <CTACard icon="/samar.png" bg="#7289DA">
+            <CTACard icon="/samar.png" alt="samar emoji" bg="#7289DA">
               <h1 className="cta-card-header text-4xl font-header mb-5">
                 {/* TODO: Get narrative to say something for Samar */}
                 Join our Discord <br/><p className="text-3xl mt-2">(SFW 18+ only!)</p>
               </h1>
-              <Button cursor fullWidth bg="rgba(26, 14, 51, 0.72)">
+              <Button cursor fullWidth to="https://discord.com" aria="soft not weak discord" bg="rgba(26, 14, 51, 0.72)">
                 <div>
-                  <img src="/Discord.svg" style={{maxHeight: '60px'}}/>
+                  <img src="/Discord.svg" alt="discord logo" style={{maxHeight: '60px'}}/>
                 </div>
               </Button>
             </CTACard>
-            <CTACard icon="/ishk.png" iconWidth="130px" bg="#D882BF">
+            <CTACard icon="/ishk.png" alt="ishkandar emoji" iconWidth="130px" bg="#D882BF">
               <h1 className="cta-card-header text-4xl font-header mb-5">
                 {/* TODO: Get narrative to say something for Samar */}
                 Subscribe to our Newsletter
               </h1>
-              <Button cursor to="http://eepurl.com/ht8xNb" fullWidth bg="rgba(26, 14, 51, 0.72)">
+              <Button cursor to="http://eepurl.com/ht8xNb" aria="soft not weak newsletter" fullWidth bg="rgba(26, 14, 51, 0.72)">
                 <div>
-                  <img src="/mail.svg" style={{maxHeight: '60px'}}/>
+                  <img src="/mail.svg" alt="subscription letter" style={{maxHeight: '60px'}}/>
                 </div>
               </Button>
             </CTACard>
-            <CTACard icon="/mo.png" bg="#5EB795">
+            <CTACard icon="/mo.png" alt="mo emoji" bg="#5EB795">
               <h1 className="cta-card-header text-4xl font-header mb-5">
                 {/* TODO: Get narrative to say something for Samar */}
                 Wishlist on Steam
               </h1>
-              <Button cursor fullWidth bg="rgba(26, 14, 51, 0.72)">
+              <Button cursor to="https://store.steampowered.com" fullWidth aria="spirit swap steam page" bg="rgba(26, 14, 51, 0.72)">
                 <div>
-                  <img src="/SteamLogo.svg" style={{maxHeight: '60px'}}/>
+                  <img src="/SteamLogo.svg" alt="steam logo" style={{maxHeight: '60px'}}/>
                 </div>
               </Button>
             </CTACard>

@@ -4,21 +4,21 @@ const LandingKeyArt = () => (
 	<div className="relative h-screen">
 		{/* Background */}
 		<div className="relative">
-			<img src="/keyart/Background.png" className="absolute h-screen object-cover object-left w-screen"/>
-			<img src="/keyart/Fireflies_BG.png" className="absolute h-screen object-cover object-left w-screen"/>
+			<img src="/keyart/Background.png" alt="moonlit background" className="absolute h-screen object-cover object-left w-screen"/>
+			<img src="/keyart/Fireflies_BG.png" alt="fireflies" className="absolute h-screen object-cover object-left w-screen"/>
 		</div>
 		{/* Characters and Logo */}
 		<div className="absolute z-10 w-full h-full overflow-hidden">
-			<img src="/keyart/Samar.png" className="samar absolute bottom-0 z-10"/>
-			<img src="/keyart/Dio.png" className="dio absolute -bottom-5"/>
-			<img src="/keyart/Kedsi.png" className="kedsi absolute bottom-0" />
+			<img src="/keyart/Samar.png" alt="samar" className="samar absolute bottom-0 z-10"/>
+			<img src="/keyart/Dio.png" alt="dio" className="dio absolute -bottom-5"/>
+			<img src="/keyart/Kedsi.png" alt="kedsi" className="kedsi absolute bottom-0" />
 		</div>
 		{/* Foreground */}
 		<div className="absolute w-full h-full z-10">
-			<img src="/keyart/Fireflies.png" className="fireflies absolute h-full w-full object-cover"/>
-			<img src="/keyart/Overlay.png" className="overlay absolute opacity-50 h-full w-full object-cover"/>
-			<img src="/keyart/Bushes_BG.png" className="bushes absolute h-full w-full object-cover object-bottom"/>
-			<img src="/GameLogo.png" className="gamelogo absolute"/>
+			<img src="/keyart/Fireflies.png" alt="fireflies" className="fireflies absolute h-full w-full object-cover"/>
+			<img src="/keyart/Overlay.png" alt="grain overlay" className="overlay absolute opacity-50 h-full w-full object-cover"/>
+			<img src="/keyart/Bushes_BG.png" alt="bushes" className="bushes absolute h-full w-full object-cover object-bottom"/>
+			<img src="/GameLogo.png" alt="spirit swap logo" className="gamelogo absolute"/>
 		</div>
 		<style jsx>
 			{`

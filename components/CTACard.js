@@ -1,8 +1,8 @@
 
-const CTACard = ({icon, iconWidth, bg, children}) => (
+const CTACard = ({icon, iconWidth, bg, alt, children}) => (
 	<div className="cta-card rounded-xl p-2 relative " style={{background: bg}}>
 		{icon &&
-			<img className="absolute icon" style={{width: iconWidth}} src={icon}/>
+			<img className="absolute icon" alt={alt} style={{width: iconWidth}} src={icon}/>
 		}
 		<div className="rounded-xl p-6 pt-12 content h-full w-full flex justify-between flex-col text-center" style={{background: 'rgba(26, 14, 51, 0.72)'}}>
 			{children}

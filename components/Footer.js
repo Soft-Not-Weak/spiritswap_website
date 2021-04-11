@@ -3,24 +3,24 @@ const Footer = () => (
 	<footer className="flex items-center justify-between p-4 m-auto">
 		<div className="icons flex">
 			{/* TODO: Add Icons */}
-			<a target="_blank" href="https://twitter.com/softnotweak">
-				<img src="/Twitter.svg" style={{width: '33px', height: '40px'}}/>
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak twitter" href="https://twitter.com/softnotweak">
+				<img src="/Twitter.svg" alt="twitter" style={{width: '33px', height: '40px'}}/>
 			</a>
-			<a target="_blank" href="https://www.instagram.com/softnotweak/">
-				<img src="/Instagram.svg" style={{width: '33px', height: '40px'}}/>
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak instagram" href="https://www.instagram.com/softnotweak/">
+				<img src="/Instagram.svg" alt="instagram" style={{width: '33px', height: '40px'}}/>
 			</a>
-			<a target="_blank" href="">
-				<img src="/Youtube.svg" style={{width: '34px', height: '40px'}}/>
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak youtube" href="https://youtube.com">
+				<img src="/Youtube.svg" alt="youtube" style={{width: '34px', height: '40px'}}/>
 			</a>
-			<a target="_blank" href="https://www.tiktok.com/@softnotweak?lang=en">
-				<img src="/TikTok.svg" style={{width: '32px', height: '40px'}}/>
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak tiktok" href="https://www.tiktok.com/@softnotweak?lang=en">
+				<img src="/TikTok.svg" alt="tiktok" style={{width: '32px', height: '40px'}}/>
 			</a>
 			
-			<a href="mailto:contact@softnotweak.com">
-				<img src="/mail.svg" style={{width: '35px', height: '40px'}}/>
+			<a href="mailto:contact@softnotweak.com" rel="noreferrer" aria-label="soft not weak contact email">
+				<img src="/mail.svg" alt="mail" style={{width: '35px', height: '40px'}}/>
 			</a>
 		</div>
-		<a target="_blank" className="text-2xl" href="https://press.softnotweak.com/spiritswap">
+		<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-2xl" href="https://press.softnotweak.com/spiritswap">
 			Presskit
 		</a>
 		<style jsx>{`

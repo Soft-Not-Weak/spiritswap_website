@@ -1,16 +1,16 @@
 import {Children} from 'react';
 
-const Button  = ({bg, ultra, alt, cursor, children, fullWidth, to, className}) => {
+const Button  = ({bg, ultra, alt, cursor, children, fullWidth, aria, to, className}) => {
 
 	if (ultra)
 	{
 		return (
-				<a target="_blank" href={to} className={`ultra-button animate-scroll rounded-lg p-1 block ${alt ? 'alt' : ''} ${className}`} style={{ background: alt ? 'linear-gradient(to right, #49baa9 0%,#0e6c6c 33%,#121e5d 67%,#c335d8 100%)' :'linear-gradient(to right, #fec204 0%,#fbb711 7%,#f5a02e 19%,#f0894a 28%,#e66576 41%,#e5607e 43%,#e652a8 49%,#e74bbe 53%,#e845ce 58%,#e843d5 62%,#e843d5 64%,#e342d1 65%,#4900aa 83%,#1a0e33 100%)', backgroundSize: '400%', transition: 'all .1s'}}>
+				<a target="_blank" href={to} rel="noreferrer" aria-label={aria} className={`ultra-button animate-scroll rounded-lg p-1 block ${alt ? 'alt' : ''} ${className}`} style={{ background: alt ? 'linear-gradient(to right, #49baa9 0%,#0e6c6c 33%,#121e5d 67%,#c335d8 100%)' :'linear-gradient(to right, #fec204 0%,#fbb711 7%,#f5a02e 19%,#f0894a 28%,#e66576 41%,#e5607e 43%,#e652a8 49%,#e74bbe 53%,#e845ce 58%,#e843d5 62%,#e843d5 64%,#e342d1 65%,#4900aa 83%,#1a0e33 100%)', backgroundSize: '400%', transition: 'all .1s'}}>
 					<div className="cursorEdges absolute w-full h-full top-0 left-0">
-						<img src="/CursorEdge.svg" className="absolute edge"/>
-						<img src="/CursorEdge.svg" className="absolute edge"/>
-						<img src="/CursorEdge.svg" className="absolute edge"/>
-						<img src="/CursorEdge.svg" className="absolute edge"/>
+						<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
+						<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
+						<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
+						<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
 					</div>
 					<div className="rounded-lg p-1" style={{background: bg}}>
 						{children}
@@ -120,12 +120,12 @@ const Button  = ({bg, ultra, alt, cursor, children, fullWidth, to, className}) =
 	if (cursor)
 	{
 		return (
-			<a target="_blank" style={{background: bg, maxWidth: fullWidth ? 'unset' :'364px'}} href={to} className={`cursor-button animate-scroll rounded-lg p-3 block ${className}`}>
+			<a target="_blank" rel="noreferrer" style={{background: bg, maxWidth: fullWidth ? 'unset' :'364px'}} href={to} className={`cursor-button animate-scroll rounded-lg p-3 block ${className}`}>
 				<div className="cursorEdges absolute w-full h-full top-0 left-0">
-					<img src="/CursorEdge.svg" className="absolute edge"/>
-					<img src="/CursorEdge.svg" className="absolute edge"/>
-					<img src="/CursorEdge.svg" className="absolute edge"/>
-					<img src="/CursorEdge.svg" className="absolute edge"/>
+					<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
+					<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
+					<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
+					<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
 				</div>
 				{children}
 				<style jsx>{`
@@ -195,7 +195,7 @@ const Button  = ({bg, ultra, alt, cursor, children, fullWidth, to, className}) =
 	}
 
 	return (
-		<a href={to} target="_blank">
+		<a href={to} rel="noreferrer" target="_blank">
 			{children}
 		</a>
 	)
