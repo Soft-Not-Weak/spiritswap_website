@@ -1,0 +1,35 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4037434, 2021-04-10T17:25:44-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: NutmegHeadline-Black by W Type Foundry
+ * URL: https://www.myfonts.com/fonts/without-foundry/nutmeg/headline-black/
+ * 
+ * Webfont: NutmegHeadline-Regular by W Type Foundry
+ * URL: https://www.myfonts.com/fonts/without-foundry/nutmeg/headline-regular/
+ * 
+ * 
+ * Webfonts copyright: Copyright &amp;#x00A9; 2017 by Salvador Rodr&amp;#x00ED;guez. All rights reserved.
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3d9b3a");
+
+@font-face {
+  font-family: "NutmegHeadline-Black";
+  src: url("/fonts/NutmegHeadlineBlack/font.woff2") format("woff2"),
+    url("/fonts/NutmegHeadlineBlack/font.woff") format("woff");
+}
+@font-face {
+  font-family: "NutmegHeadline-Regular";
+  src: url("/fonts/NutmegHeadlineRegular/font.woff2") format("woff2"),
+    url("/fonts/NutmegHeadlineRegular/font.woff") format("woff");
+}
