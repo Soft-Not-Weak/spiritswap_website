@@ -9,7 +9,7 @@ const Footer = () => (
 			<a target="_blank" rel="noreferrer" aria-label="soft not weak instagram" href="https://www.instagram.com/softnotweak/">
 				<img src="/Instagram.svg" alt="instagram" style={{width: '33px', height: '40px'}}/>
 			</a>
-			<a target="_blank" rel="noreferrer" aria-label="soft not weak youtube" href="https://youtube.com">
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak youtube" href="https://www.youtube.com/channel/UC8aq14JaN7BbCe2Tnrda10A">
 				<img src="/Youtube.svg" alt="youtube" style={{width: '34px', height: '40px'}}/>
 			</a>
 			<a target="_blank" rel="noreferrer" aria-label="soft not weak tiktok" href="https://www.tiktok.com/@softnotweak?lang=en">

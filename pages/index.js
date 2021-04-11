@@ -26,7 +26,7 @@ export default function Home() {
         <div className="mb-24"> 
           <h1 className="font-header text-6xl mb-6 cta-heading">Wishlist on</h1>
           {/* TODO: Get Steam page link for game. */}
-          <Button cursor  bg="rgb(132 63 148 / 35%)" aria="spirit swap steam page" to="https://store.steampowered.com" className="m-auto">
+          <Button cursor  bg="rgb(132 63 148 / 35%)" aria="spirit swap steam page" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To" className="m-auto">
             <img src="/SteamLogo.svg" alt="steam logo" className="text-white m-auto" style={{maxWidth: '176px'}}/>
           </Button>
         </div>
@@ -44,7 +44,7 @@ export default function Home() {
         </h1>
 
         <div className="m-auto mb-7" style={{maxWidth: '1364px'}}>
-          <Youtube embed="zo-LEmtSIY4" />
+          <Youtube embed="gRVEE_m9qec" />
         </div>
 
         <p className="video-subtext m-auto text-4xl leading-relaxed w-full mb-28" style={{maxWidth: '1283px'}}>
@@ -152,7 +152,7 @@ export default function Home() {
                 {/* TODO: Get narrative to say something for Samar */}
                 Wishlist on Steam
               </h1>
-              <Button cursor to="https://store.steampowered.com" fullWidth aria="spirit swap steam page" bg="rgba(26, 14, 51, 0.72)">
+              <Button cursor to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To" fullWidth aria="spirit swap steam page" bg="rgba(26, 14, 51, 0.72)">
                 <div>
                   <img src="/SteamLogo.svg" alt="steam logo" style={{maxHeight: '60px'}}/>
                 </div>
