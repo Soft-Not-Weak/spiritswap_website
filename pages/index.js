@@ -14,15 +14,14 @@ export default function Home() {
   const swapVideo = useRef();
   const bondVideo = useRef();
   const styleVideo = useRef();
-  const samarBop = useRef();
   const frogBop = useRef();
 
   useEffect(() => {
+
     swapVideo.current.play();
     bondVideo.current.play();
     styleVideo.current.play();
-    samarBop.current.play();
-    frogBop.current.play();
+    
   }, [])
 
   return (
@@ -113,7 +112,7 @@ export default function Home() {
         {/* Music */}
         <div className="music m-auto flex flex-row mb-32">
           <div className="characters relative">
-            <video preload="true" ref={samarBop} autoplay muted loop type="video/webm" src="/samar_bop.webm" className="samar absolute h-full object-cover right-0" />
+            <img src="/samar_kick.png" className="samar absolute h-full object-cover right-0" />
             <video preload="true" ref={frogBop} autoplay muted loop type="video/webm" src="/frog_bop.webm" className="frog absolute bottom-0"/>
           </div>
           <div className="content text-left flex flex-col justify-around px-5" style={{flex: '2'}}>
@@ -280,6 +279,8 @@ export default function Home() {
           .cta-card-button-image {
             margin: auto;
           }
+
+
 
           @media (max-width: 1200px)
           {
