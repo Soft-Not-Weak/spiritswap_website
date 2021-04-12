@@ -342,7 +342,7 @@ export default function Home() {
 
             .video-subtext {
               text-align: left; 
-              font-size: 8vw;
+              font-size: 1.7rem;
               margin-bottom: 3rem;
             }
 

@@ -32,14 +32,14 @@ const LandingKeyArt = () => (
 
 				.samar {
 					width: 46%; 
-					max-width: 704px;
+					max-width: 554px;
 					min-width: 514px;
 					right: -5%;
 				}
 
 				.dio {
 					width: 43%;
-					max-width: 628px;
+					max-width:508px;
 					min-width: 500px;
 					right: 18%;
 				}

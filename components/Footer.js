@@ -39,7 +39,7 @@ const Footer = () => (
 			.icons a {
 				display: flex; 
 				align-items: center; 
-				margin-right:.7rem;
+				margin-right:1.64rem;
 			}
 
 			@media (max-width: 600px)
