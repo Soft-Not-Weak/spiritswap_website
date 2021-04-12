@@ -1,3 +1,5 @@
+import {useRef, useEffect} from 'react';
+
 import SEO from '../components/SEO'
 import GameboardLayout from '../components/GameboardLayout'
 import LandingKeyArt from '../components/LandingKeyArt'
@@ -9,7 +11,15 @@ import Footer from '../components/Footer'
 import Timer from '../components/Timer'
 
 export default function Home() {
+  const swapVideo = useRef();
+  const bondVideo = useRef();
+  const styleVideo = useRef();
 
+  useEffect(() => {
+    swapVideo.current.play();
+    bondVideo.current.play();
+    styleVideo.current.play();
+  }, [])
 
   return (
     <main style={{color: '#fff8ea'}}>
@@ -50,7 +60,6 @@ export default function Home() {
         <p className="video-subtext m-auto text-4xl leading-relaxed w-full mb-28" style={{maxWidth: '1283px'}}>
           Spirit Swap is an action-puzzle game set in a lush, narrative-driven world of witchy demons.  
         </p>
-
         {/* Features */}
         <div className="info-grid">
           <InfoBlock>
@@ -60,7 +69,8 @@ export default function Home() {
               </span>
             </h1>
             <div className="footage swap">
-              <img src="/footage/Match.gif" alt="match gameplay" className="rounded-xl drop-shadow-2xl object-cover mb-4" />
+              <video preload="true" ref={swapVideo} autoplay muted loop type="video/mp4" src="/footage/Match.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
+              </video>
             </div>
             <p className="text-2xl leading-relaxed">
               Swap to the beat and cast powerful spells as you reassemble lost spirits on your own or together with friends (local co-op)!
@@ -73,7 +83,8 @@ export default function Home() {
               </span>
             </h1>
             <div className="footage bond">
-              <img src="/footage/Bond.gif" alt="bond gameplay" className="rounded-xl drop-shadow-2xl object-cover mb-4"/>
+              <video preload="true" ref={bondVideo} autoplay muted loop type="video/mp4" src="/footage/Bond.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
+              </video>
             </div>
             <p className="text-2xl leading-relaxed"> 
               Bond with a cast of witches and demons. Plan a pizza party together, crash a concert, maybe even smooch!
@@ -86,7 +97,8 @@ export default function Home() {
               </span>
             </h1>
             <div className="footage style">
-              <img src="/footage/Decorate.gif" alt="decorate gameplay" className="rounded-xl drop-shadow-2xl object-cover mb-4"/>
+              <video preload="true" ref={styleVideo} autoplay muted loop type="video/mp4" src="/footage/Decorate.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
+              </video>
             </div>
             <p className="text-2xl leading-relaxed">
               Style and decorate your bedroom with trinkets and keepsakes from your bonds to mixup your runs!
@@ -97,8 +109,8 @@ export default function Home() {
         {/* Music */}
         <div className="music m-auto flex flex-row mb-32">
           <div className="characters relative">
-            <img src="/samar_bop.gif" alt="samar dancing" className="samar absolute h-full object-cover right-0"/>
-            <img src="/frog_bop.gif" alt="frog dancing" className="frog absolute bottom-0"/>
+            {/* <img src="/samar_bop.gif" alt="samar dancing" className="samar absolute h-full object-cover right-0"/>
+            <img src="/frog_bop.gif" alt="frog dancing" className="frog absolute bottom-0"/> */}
           </div>
           <div className="content text-left flex flex-col justify-around px-5" style={{flex: '2'}}>
             <p className="info text-4xl leading-relaxed">

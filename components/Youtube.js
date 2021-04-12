@@ -6,7 +6,7 @@ const Youtube = ({embed, className}) => (
 			className="absolute top-0 left-0 w-full h-full rounded-4xl drop-shadow-md"
 			height="1440"
 			src={`https://www.youtube.com/embed/${embed}`}
-			frameborder="0"
+			frameBorder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 			allowFullScreen
 			title="Embedded youtube"
