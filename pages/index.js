@@ -44,7 +44,7 @@ export default function Home() {
         </h1>
 
         <div className="m-auto mb-7" style={{maxWidth: '1364px'}}>
-          <Youtube embed="gRVEE_m9qec" />
+          <Youtube embed="Fe4p3xl4RAk" />
         </div>
 
         <p className="video-subtext m-auto text-4xl leading-relaxed w-full mb-28" style={{maxWidth: '1283px'}}>
@@ -63,7 +63,7 @@ export default function Home() {
               <img src="/footage/Match.gif" alt="match gameplay" className="rounded-xl drop-shadow-2xl object-cover mb-4" />
             </div>
             <p className="text-2xl leading-relaxed">
-              Swap to the beat and cast powerful spells as you reassemble lost spirits solo or together with friends (local co-op)!
+              Swap to the beat and cast powerful spells as you reassemble lost spirits on your own or together with friends (local co-op)!
             </p>
           </InfoBlock>
           <InfoBlock>
@@ -130,7 +130,7 @@ export default function Home() {
                 {/* TODO: Get narrative to say something for Samar */}
                 Join our Discord <br/><p className="text-3xl mt-2">(SFW 18+ only!)</p>
               </h1>
-              <Button cursor fullWidth to="https://discord.com" aria="soft not weak discord" bg="rgba(26, 14, 51, 0.72)">
+              <Button cursor fullWidth to="https://discord.gg/pSYhWbq2J8" aria="soft not weak discord" bg="rgba(26, 14, 51, 0.72)">
                 <div>
                   <img src="/Discord.svg" alt="discord logo" style={{maxHeight: '60px'}}/>
                 </div>

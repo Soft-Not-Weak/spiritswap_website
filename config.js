@@ -4,7 +4,7 @@ export default {
 	keywords: 'Video game, Puzzle Game, Casual Game, Lofi, LofiHipHop, Spirit Swap, SoftNotWeak, Tetris Attack, Panel De Pon',
 	social: {
 		url: 'https://spiritswapgame.com',
-		image: 'https://spiritswapgame.com/keyartnologo.png',
+		image: 'https://spiritswapgame.com/keyart_logo.png',
 		twitter: {
 			profile: '@SoftNotWeak',
 			cardType: 'summary'
