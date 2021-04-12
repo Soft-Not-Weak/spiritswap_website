@@ -1,4 +1,3 @@
-import Image from 'next/image'
 
 const LandingKeyArt = () => (
 	<div className="relative h-screen">
