@@ -9,7 +9,7 @@ export default function SEO({description, title}) {
 		<Head>
 			<title>{siteTitle}</title>
 			<meta name="description" content={siteDescription} />
-			
+			<link rel="author" href="/humans.txt"/>
 			{
 				config.social &&
 				<>

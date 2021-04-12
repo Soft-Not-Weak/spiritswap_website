@@ -1,6 +1,6 @@
 
 const LandingKeyArt = () => (
-	<div className="relative h-screen">
+	<header className="relative h-screen">
 		{/* Background */}
 		<div className="relative">
 			<img src="/keyart/Background.png" alt="moonlit background" className="absolute h-screen object-cover object-left w-screen"/>
@@ -122,7 +122,7 @@ const LandingKeyArt = () => (
 
 			`}
 		</style>
-	</div>
+	</header>
 )
 
 export default LandingKeyArt;
