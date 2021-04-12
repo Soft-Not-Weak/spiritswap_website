@@ -109,8 +109,8 @@ export default function Home() {
         {/* Music */}
         <div className="music m-auto flex flex-row mb-32">
           <div className="characters relative">
-            {/* <img src="/samar_bop.gif" alt="samar dancing" className="samar absolute h-full object-cover right-0"/>
-            <img src="/frog_bop.gif" alt="frog dancing" className="frog absolute bottom-0"/> */}
+            <img src="/samar_bop.gif" alt="samar dancing" className="samar absolute h-full object-cover right-0"/>
+            <img src="/frog_bop.gif" alt="frog dancing" className="frog absolute bottom-0"/>
           </div>
           <div className="content text-left flex flex-col justify-around px-5" style={{flex: '2'}}>
             <p className="info text-4xl leading-relaxed">
