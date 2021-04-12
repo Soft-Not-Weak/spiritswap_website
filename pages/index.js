@@ -132,7 +132,7 @@ export default function Home() {
               </h1>
               <Button cursor fullWidth to="https://discord.gg/pSYhWbq2J8" aria="soft not weak discord" bg="rgba(26, 14, 51, 0.72)">
                 <div>
-                  <img src="/Discord.svg" alt="discord logo" style={{maxHeight: '60px'}}/>
+                  <img src="/Discord.svg" className="cta-card-button-image" alt="discord logo" style={{maxHeight: '60px'}}/>
                 </div>
               </Button>
             </CTACard>
@@ -143,7 +143,7 @@ export default function Home() {
               </h1>
               <Button cursor to="http://eepurl.com/ht8xNb" aria="soft not weak newsletter" fullWidth bg="rgba(26, 14, 51, 0.72)">
                 <div>
-                  <img src="/mail.svg" alt="subscription letter" style={{maxHeight: '60px'}}/>
+                  <img src="/mail.svg" className="cta-card-button-image" alt="subscription letter" style={{maxHeight: '60px'}}/>
                 </div>
               </Button>
             </CTACard>
@@ -154,7 +154,7 @@ export default function Home() {
               </h1>
               <Button cursor to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To" fullWidth aria="spirit swap steam page" bg="rgba(26, 14, 51, 0.72)">
                 <div>
-                  <img src="/SteamLogo.svg" alt="steam logo" style={{maxHeight: '60px'}}/>
+                  <img src="/SteamLogo.svg" className="cta-card-button-image" alt="steam logo" style={{maxHeight: '60px'}}/>
                 </div>
               </Button>
             </CTACard>
@@ -259,6 +259,10 @@ export default function Home() {
 
           .music .content {
             flex: 2;
+          }
+
+          .cta-card-button-image {
+            margin: auto;
           }
 
           @media (max-width: 1200px)
