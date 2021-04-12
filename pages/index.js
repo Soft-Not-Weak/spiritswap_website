@@ -12,7 +12,7 @@ export default function Home() {
 
 
   return (
-    <div style={{color: '#fff8ea'}}>
+    <main style={{color: '#fff8ea'}}>
       <SEO title="Lofi Beats to Match-3 To"/>
       <LandingKeyArt/>
       <GameboardLayout>
@@ -419,6 +419,6 @@ export default function Home() {
             }
           }
       `}</style>
-    </div>
+    </main>
   )
 }

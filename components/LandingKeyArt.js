@@ -1,6 +1,6 @@
 
 const LandingKeyArt = () => (
-	<header className="relative h-screen">
+	<header className="relative h-screen" role="main">
 		{/* Background */}
 		<div className="relative">
 			<img src="/keyart/Background.png" alt="moonlit background" className="absolute h-screen object-cover object-left w-screen"/>
