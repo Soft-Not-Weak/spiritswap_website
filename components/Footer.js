@@ -20,9 +20,14 @@ const Footer = () => (
 				<img src="/mail.svg" alt="mail" style={{width: '35px', height: '40px'}}/>
 			</a>
 		</div>
-		<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-2xl" href="https://press.softnotweak.com/spiritswap">
-			Presskit
-		</a>
+		<div className="right-links">
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-2xl mr-8" href="https://press.softnotweak.com/spiritswap">
+				Presskit
+			</a>
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-2xl" href="/humans.txt">
+				Humans
+			</a>
+		</div>
 		<style jsx>{`
 			footer {
 				border-top: 2px solid #fff8ea96;
@@ -51,6 +56,10 @@ const Footer = () => (
 				}
 				.icons a {
 					margin-right: unset;
+				}
+
+				.right-links a:first-of-type {
+					margin-right: 2rem;
 				}
 			}
 		`}</style>
