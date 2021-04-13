@@ -21,6 +21,7 @@ export default function Home() {
     swapVideo.current.play();
     bondVideo.current.play();
     styleVideo.current.play();
+    frogBop.current.play();
     
   }, [])
 
