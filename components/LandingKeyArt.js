@@ -1,3 +1,5 @@
+import Button from '../components/Button'
+import Timer from '../components/Timer'
 
 const LandingKeyArt = () => (
 	<header className="relative h-screen" role="main">
@@ -17,7 +19,16 @@ const LandingKeyArt = () => (
 			<img src="/keyart/Fireflies.png" alt="fireflies" className="fireflies absolute h-full w-full object-cover"/>
 			<img src="/keyart/Overlay.png" alt="grain overlay" className="overlay absolute opacity-50 h-full w-full object-cover"/>
 			<img src="/keyart/Bushes_BG.png" alt="bushes" className="bushes absolute h-full w-full object-cover object-bottom"/>
-			<img src="/GameLogo.png" alt="spirit swap logo" className="gamelogo absolute"/>
+			<div className="gamelogo absolute">
+				<img src="/GameLogo.png" alt="spirit swap logo" className="m-auto w-full mb-4"/>
+				<div className="content mb-24 text-center">
+					<h1 className="font-header mb-1 cta-heading">Support us on</h1> 
+					<Button bg="rgba(26, 14, 51, 0.72)" aria="spirit swap kickstarter" ultra className="m-auto mb-3" to="https://www.kickstarter.com/projects/softnotweak/spirit-swap">
+						<img src="/KickstarterLogo.svg" alt="kickstarter logo"/>
+					</Button>
+					<Timer deadline={new Date(2021, 4, 13)} className="z-10"/>
+				</div>
+			</div>
 		</div>
 		<style jsx>
 			{`
@@ -28,6 +39,10 @@ const LandingKeyArt = () => (
 					left: 22%;
 					top: 6vw;
 					transform: unset;
+				}
+
+				.game-logo .cta-heading {
+					font-size: 3rem;
 				}
 
 				.samar {
@@ -117,6 +132,15 @@ const LandingKeyArt = () => (
 						width: 100%; 
 						top: 9%; 
 						max-width: 435px;
+					}
+
+					.gamelogo .content {
+						padding-left: 28px;
+						padding-right: 28px;
+					}
+
+					.gamelogo .content .cta-heading {
+						font-size: 10vw;
 					}
 				}
 

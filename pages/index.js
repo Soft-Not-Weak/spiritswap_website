@@ -30,13 +30,6 @@ export default function Home() {
       <SEO title="Lofi Beats to Match-3 To"/>
       <LandingKeyArt/>
       <GameboardLayout>
-        <div className="mb-24">
-          <h1 className="font-header text-6xl mb-6 cta-heading">Support us on</h1> 
-          <Button bg="rgba(26, 14, 51, 0.72)" aria="spirit swap kickstarter" ultra className="m-auto mb-3" to="https://www.kickstarter.com/projects/softnotweak/spirit-swap">
-            <img src="/KickstarterLogo.svg" alt="kickstarter logo"/>
-          </Button>
-          <Timer deadline={new Date(2021, 4, 13)} className="z-10"/>
-        </div>
         <div className="mb-24"> 
           <h1 className="font-header text-6xl mb-6 cta-heading">Wishlist on</h1>
           {/* TODO: Get Steam page link for game. */}
