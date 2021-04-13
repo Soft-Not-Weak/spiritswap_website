@@ -27,9 +27,12 @@ const LandingKeyArt = () => (
 						<img src="/KickstarterLogo.svg" alt="kickstarter logo"/>
 					</Button>
 					<Timer deadline={new Date(2021, 4, 13)} className="z-10"/>
+					<img src="/chevron.svg" alt="scroll indicator" className="chevron bottom-0 animate-bounce m-auto"/>
 				</div>
 			</div>
+			
 		</div>
+		
 		<style jsx>
 			{`
 				.gamelogo {
@@ -37,12 +40,14 @@ const LandingKeyArt = () => (
 					min-width: 500px;
 					max-width: 780px;
 					left: 22%;
-					top: 6vw;
+					top: 4vw;
 					transform: unset;
 				}
 
-				.game-logo .cta-heading {
+				.gamelogo .cta-heading {
 					font-size: 3rem;
+					margin-bottom: 1rem;
+					line-height: normal;
 				}
 
 				.samar {
@@ -64,6 +69,10 @@ const LandingKeyArt = () => (
 					max-width: 298px;
 					min-width: 232px;
 					left: 6%; 
+				}
+
+				.chevron {
+					width: 6rem;
 				}
 
 				@media (max-width: 985px)
@@ -139,8 +148,12 @@ const LandingKeyArt = () => (
 						padding-right: 28px;
 					}
 
-					.gamelogo .content .cta-heading {
+					.gamelogo .cta-heading {
 						font-size: 10vw;
+					}
+
+					.chevron {
+						width: 20vw; 
 					}
 				}
 

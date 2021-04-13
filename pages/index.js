@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         <div>
         <h1 className="font-header text-6xl mb-6 cta-heading">Tune in and</h1>
-          <Button alt bg="rgba(26, 14, 51, 0.72)" aria="spirit swap demo" ultra className="m-auto mb-28" to="https://softnotweak.itch.io/spirit-swap-lofi-beats-to-match-3-to">
+          <Button alt bg="rgba(26, 14, 51, 0.72)" aria="spirit swap demo" ultra className="m-auto mb-20" to="https://softnotweak.itch.io/spirit-swap-lofi-beats-to-match-3-to">
               <h1 className="font-header text-4xl p-3">Play the Demo!</h1>
           </Button>
         </div>
@@ -66,7 +66,7 @@ export default function Home() {
               </span>
             </h1>
             <div className="footage swap">
-              <video preload="true" ref={swapVideo} autoplay muted loop type="video/mp4" src="/footage/Match.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
+              <video preload="true" ref={swapVideo} autoPlay muted loop type="video/mp4" src="/footage/Match.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
               </video>
             </div>
             <p className="text-2xl leading-relaxed">
@@ -80,7 +80,7 @@ export default function Home() {
               </span>
             </h1>
             <div className="footage bond">
-              <video preload="true" ref={bondVideo} autoplay muted loop type="video/mp4" src="/footage/Bond.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
+              <video preload="true" ref={bondVideo} autoPlay muted loop type="video/mp4" src="/footage/Bond.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
               </video>
             </div>
             <p className="text-2xl leading-relaxed"> 
@@ -94,7 +94,7 @@ export default function Home() {
               </span>
             </h1>
             <div className="footage style">
-              <video preload="true" ref={styleVideo} autoplay muted loop type="video/mp4" src="/footage/Decorate.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
+              <video preload="true" ref={styleVideo} autoPlay muted loop type="video/mp4" src="/footage/Decorate.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
               </video>
             </div>
             <p className="text-2xl leading-relaxed">
@@ -107,7 +107,7 @@ export default function Home() {
         <div className="music m-auto flex flex-row mb-32">
           <div className="characters relative">
             <img src="/samar_kick.png" className="samar absolute h-full object-cover right-0" />
-            <video preload="true" ref={frogBop} autoplay muted loop type="video/webm" src="/frog_bop.webm" className="frog absolute bottom-0"/>
+            <video preload="true" ref={frogBop} autoPlay muted loop type="video/webm" src="/frog_bop.webm" className="frog absolute bottom-0"/>
           </div>
           <div className="content text-left flex flex-col justify-around px-5" style={{flex: '2'}}>
             <p className="info text-4xl leading-relaxed">
