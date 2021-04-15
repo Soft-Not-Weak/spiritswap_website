@@ -111,15 +111,12 @@ export default function Home() {
           </div>
           <div className="content text-left flex flex-col justify-around px-5" style={{flex: '2'}}>
             <p className="info text-4xl leading-relaxed">
-              {/* TODO: Link to meltycanon and eyesonbrandon? */}
-              Coast your swap cursor to a custom lofi hip hop soundtrack by the incredible Meltycanon and eyesonbrandon.
+              {/* TODO: Link to meltycanon? */}
+              Coast your swap cursor to a custom lofi hip hop soundtrack by the incredible Meltycanon.
             </p>
             <div className="flex soundcloud-container">
-              <div className="soundcloud  mr-10 flex-1">
+              <div className="soundcloud w-full flex-1">
               <iframe className="rounded-lg" title="soundcloud spirit swap theme by meltycanon" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1024044487&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-              </div>
-              <div className="soundcloud flex-1">
-              <iframe className="rounded-lg" title="soundcloud sugarplum by eyelovebrandon" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1024093933&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
               </div>
             </div>
           </div>
@@ -338,12 +335,20 @@ export default function Home() {
               margin-right: 0; 
               margin-bottom: 2rem; 
             }
+
+            .footage video {
+              width: 100%;
+            }
           }
 
           @media (max-width: 600px) {
             .cta-heading, .video-cta, .on-beat-header  {
               font-size: 10vw;
               
+            }
+
+            .footage video {
+              width: 100%;
             }
 
             .video-cta {
