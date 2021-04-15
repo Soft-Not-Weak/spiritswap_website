@@ -115,8 +115,12 @@ export default function Home() {
               Coast your swap cursor to a custom lofi hip hop soundtrack by the incredible Meltycanon and eyesonbrandon.
             </p>
             <div className="flex soundcloud-container">
-              <div className="soundcloud w-full flex-1">
+              <div className="soundcloud mr-10 flex-1">
               <iframe className="rounded-lg" title="soundcloud spirit swap theme by meltycanon" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1024044487&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              </div>
+
+              <div className="soundcloud flex-1">
+                <iframe className="rounded-lg" title="soundcloud sweet by meltycanon" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1029713527&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
               </div>
             </div>
           </div>
