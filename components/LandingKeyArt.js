@@ -26,7 +26,7 @@ const LandingKeyArt = () => (
 					<Button bg="rgba(26, 14, 51, 0.72)" aria="spirit swap kickstarter" ultra className="m-auto mb-3" to="https://www.kickstarter.com/projects/softnotweak/spirit-swap">
 						<img src="/KickstarterLogo.svg" alt="kickstarter logo"/>
 					</Button>
-					<Timer deadline={new Date("Thu, May 13 2021 11:59 AM EDT")} className="z-10"/>
+					<Timer deadline={new Date("Thu, May 14 2021 11:59 AM EDT")} className="z-10"/>
 					<img src="/chevron.svg" alt="scroll indicator" className="chevron bottom-0 animate-bounce m-auto"/>
 				</div>
 			</div>
