@@ -112,7 +112,7 @@ export default function Home() {
           <div className="content text-left flex flex-col justify-around px-5" style={{flex: '2'}}>
             <p className="info text-4xl leading-relaxed">
               {/* TODO: Link to meltycanon? */}
-              Coast your swap cursor to a custom lofi hip hop soundtrack by the incredible Meltycanon and eyesonbrandon.
+              Coast your swap cursor to a custom lofi hip hop soundtrack by the incredible Meltycanon.
             </p>
             <div className="flex soundcloud-container">
               <div className="soundcloud mr-10 flex-1">
