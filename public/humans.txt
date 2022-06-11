@@ -20,8 +20,6 @@ _,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,_
 /* TEAM */
 Creative Director, Soft Not Weak: Alex
 
-Animation, Soft Not Weak: Chris
-
 Programming, Soft Not Weak: Morgan Lavelle
 
 UI/UX, Soft Not Weak: Réjon Taylor-Foster
@@ -33,6 +31,8 @@ Character Art: Dice
 Character Art: Sam Tesi
 
 Animation: Khei
+
+Animation: Chris
 
 Background Art + Animation: Jenny Mori
 

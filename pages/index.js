@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         <div>
         <h1 className="font-header text-6xl mb-6 cta-heading">Tune in and</h1>
-          <Button alt bg="rgba(26, 14, 51, 0.72)" aria="spirit swap demo" ultra className="m-auto mb-20" to="https://softnotweak.itch.io/spirit-swap-lofi-beats-to-match-3-to">
+          <Button alt bg="rgba(26, 14, 51, 0.72)" aria="spirit swap demo" ultra className="m-auto mb-20" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To/">
               <h1 className="font-header text-4xl p-3">Play the Demo!</h1>
           </Button>
         </div>
@@ -120,7 +120,7 @@ export default function Home() {
               </div>
 
               <div className="soundcloud flex-1">
-                <iframe className="rounded-lg" title="soundcloud sweet by meltycanon" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1029713527&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+              <iframe className="rounded-lg" title="swap it out by meltycanon" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1177864816&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
               </div>
             </div>
           </div>

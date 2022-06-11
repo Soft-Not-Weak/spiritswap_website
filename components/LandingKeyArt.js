@@ -22,11 +22,6 @@ const LandingKeyArt = () => (
 			<div className="gamelogo absolute">
 				<img src="/GameLogo.png" alt="spirit swap logo" className="m-auto w-full mb-4"/>
 				<div className="content mb-24 text-center">
-					<h1 className="font-header mb-1 cta-heading">Support us on</h1> 
-					<Button bg="rgba(26, 14, 51, 0.72)" aria="spirit swap kickstarter" ultra className="m-auto mb-3" to="https://www.kickstarter.com/projects/softnotweak/spirit-swap">
-						<img src="/KickstarterLogo.svg" alt="kickstarter logo"/>
-					</Button>
-					<p className="text-4xl italic"> WE DID IT! <br/>Thank you so much!! </p>
 					<img src="/chevron.svg" alt="scroll indicator" className="chevron bottom-0 animate-bounce m-auto"/>
 				</div>
 			</div>
@@ -40,7 +35,7 @@ const LandingKeyArt = () => (
 					min-width: 500px;
 					max-width: 780px;
 					left: 22%;
-					top: 4vw;
+					top: 8vw;
 					transform: unset;
 				}
 
