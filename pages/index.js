@@ -51,7 +51,7 @@ export default function Home() {
         </h1>
 
         <div className="m-auto mb-7" style={{maxWidth: '1364px'}}>
-          <Youtube embed="Fe4p3xl4RAk" />
+          <Youtube embed="WC2WoJzm4rI" />
         </div>
 
         <p className="video-subtext m-auto text-4xl leading-relaxed w-full mb-28" style={{maxWidth: '1283px'}}>
@@ -62,7 +62,7 @@ export default function Home() {
           <InfoBlock>
             <h1 className="font-header text-7xl leading-relaxed">
               <span className="gradient-text pb-2">
-                Swap
+              💫 Swap 💫
               </span>
             </h1>
             <div className="footage swap">
@@ -70,13 +70,13 @@ export default function Home() {
               </video>
             </div>
             <p className="text-2xl leading-relaxed">
-              Swap to the beat and cast powerful spells as you reassemble lost spirits on your own or together with friends (local co-op)!
+            Cast powerful spells by arranging spirits into special patterns to unlock potent powers on your own or together with friends (local co-op)!
             </p>
           </InfoBlock>
           <InfoBlock>
             <h1 className="font-header text-7xl leading-relaxed">
               <span className="gradient-text pb-2">
-                Bond
+              💞 Bond 💞
               </span>
             </h1>
             <div className="footage bond">
@@ -84,13 +84,13 @@ export default function Home() {
               </video>
             </div>
             <p className="text-2xl leading-relaxed"> 
-              Bond with a cast of witches and demons. Plan a pizza party together, crash a concert, maybe even smooch!
+            Bond with a cast of witches and demons… and maybe even smooch!
             </p>
           </InfoBlock>
           <InfoBlock>
             <h1 className="font-header text-7xl leading-relaxed">
               <span className="gradient-text pb-2">
-                Style
+              🖌️ Style 🖌️
               </span>
             </h1>
             <div className="footage style">
@@ -98,7 +98,7 @@ export default function Home() {
               </video>
             </div>
             <p className="text-2xl leading-relaxed">
-              Style and decorate your bedroom with trinkets and keepsakes from your bonds to mixup your runs!
+            Decorate your bedroom. Earn trinkets and keepsakes as you play, then place them in Samar’s room to impact gameplay.
             </p>
           </InfoBlock>
         </div>
@@ -106,13 +106,12 @@ export default function Home() {
         {/* Music */}
         <div className="music m-auto flex flex-row mb-32">
           <div className="characters relative">
-            <img src="/samar_kick.png" className="samar absolute h-full object-cover right-0" />
             <video preload="true" ref={frogBop} autoPlay muted loop type="video/webm" src="/frog_bop.webm" className="frog absolute bottom-0"/>
           </div>
           <div className="content text-left flex flex-col justify-around px-5" style={{flex: '2'}}>
             <p className="info text-4xl leading-relaxed">
               {/* TODO: Link to meltycanon? */}
-              Coast your swap cursor to a custom lofi hip hop soundtrack by the incredible Meltycanon.
+              🎵 Coast your swap cursor to a custom lofi hip hop soundtrack by the incredible Meltycanon.
             </p>
             <div className="flex soundcloud-container">
               <div className="soundcloud mr-10 flex-1">
@@ -263,7 +262,7 @@ export default function Home() {
           }
 
           .music .characters .frog {
-             max-height: 280px; 
+             max-height: 500px; 
              left: 20px;
           }
 
@@ -409,7 +408,7 @@ export default function Home() {
             }
 
             .music .characters .frog {
-              max-height: 180px; 
+              max-height: 500px; 
               left: unset; 
               bottom: -17px;
             }

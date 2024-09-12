@@ -9,6 +9,8 @@ export default function SEO({description, title}) {
 		<Head>
 			<title>{siteTitle}</title>
 			<meta name="description" content={siteDescription} />
+			<meta name="robots" content="nocache" />
+			<meta name="robots" content="noarchive" />
 			<link rel="author" href="/humans.txt"/>
 			{
 				config.social &&

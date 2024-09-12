@@ -7,10 +7,10 @@ const Button  = ({bg, ultra, alt, cursor, children, fullWidth, aria, to, classNa
 		return (
 				<a target="_blank" href={to} rel="noreferrer" aria-label={aria} className={`ultra-button animate-scroll rounded-lg p-1 block ${alt ? 'alt' : ''} ${className}`} style={{ background: alt ? 'linear-gradient(to right, #49baa9 0%,#0e6c6c 33%,#121e5d 67%,#c335d8 100%)' :'linear-gradient(to right, #fec204 0%,#fbb711 7%,#f5a02e 19%,#f0894a 28%,#e66576 41%,#e5607e 43%,#e652a8 49%,#e74bbe 53%,#e845ce 58%,#e843d5 62%,#e843d5 64%,#e342d1 65%,#4900aa 83%,#1a0e33 100%)', backgroundSize: '400%', transition: 'all .1s'}}>
 					<div className="cursorEdges absolute w-full h-full top-0 left-0">
-						<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
-						<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
-						<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
-						<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
+						<img src="/Cursor.png" alt="cursor edge" className="absolute edge"/>
+						<img src="/Cursor.png" alt="cursor edge" className="absolute edge"/>
+						<img src="/Cursor.png" alt="cursor edge" className="absolute edge"/>
+						<img src="/Cursor.png" alt="cursor edge" className="absolute edge"/>
 					</div>
 					<div className="rounded-lg p-1" style={{background: bg}}>
 						{children}
@@ -18,7 +18,7 @@ const Button  = ({bg, ultra, alt, cursor, children, fullWidth, aria, to, classNa
 					<style jsx>{`
 						.ultra-button {
 							position: relative;
-							max-width: 364px;
+							max-width: 434px;
 							transform: scale(1);
 							transition: transform .164s ease-out;
 						}
@@ -122,10 +122,10 @@ const Button  = ({bg, ultra, alt, cursor, children, fullWidth, aria, to, classNa
 		return (
 			<a target="_blank" rel="noreferrer" style={{background: bg, maxWidth: fullWidth ? 'unset' :'364px'}} href={to} className={`cursor-button animate-scroll rounded-lg p-3 block ${className}`}>
 				<div className="cursorEdges absolute w-full h-full top-0 left-0">
-					<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
-					<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
-					<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
-					<img src="/CursorEdge.svg" alt="cursor edge" className="absolute edge"/>
+					<img src="/Cursor.png" alt="cursor edge" className="absolute edge"/>
+					<img src="/Cursor.png" alt="cursor edge" className="absolute edge"/>
+					<img src="/Cursor.png" alt="cursor edge" className="absolute edge"/>
+					<img src="/Cursor.png" alt="cursor edge" className="absolute edge"/>
 				</div>
 				{children}
 				<style jsx>{`

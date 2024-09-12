@@ -21,6 +21,9 @@ const LandingKeyArt = () => (
 			<img src="/keyart/Bushes_BG.png" alt="bushes" className="bushes absolute h-full w-full object-cover object-bottom"/>
 			<div className="gamelogo absolute">
 				<img src="/GameLogo.png" alt="spirit swap logo" className="m-auto w-full mb-4"/>
+				<Button cursor alt bg="rgba(26, 14, 51, 0.72)" aria="spirit swap demo" ultra className="m-auto mb-2 w-full" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To/">
+				<h1 className="font-header text-4xl p-3 text-center">Backer Beta is Live</h1>
+				</Button>
 				<div className="content mb-24 text-center">
 					<img src="/chevron.svg" alt="scroll indicator" className="chevron bottom-0 animate-bounce m-auto"/>
 				</div>
