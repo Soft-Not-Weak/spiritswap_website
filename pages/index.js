@@ -11,16 +11,16 @@ import Footer from '../components/Footer'
 import Timer from '../components/Timer'
 
 export default function Home() {
-  const swapVideo = useRef();
-  const bondVideo = useRef();
-  const styleVideo = useRef();
+  // const swapVideo = useRef();
+  // const bondVideo = useRef();
+  // const styleVideo = useRef();
   const frogBop = useRef();
 
   useEffect(() => {
 
-    swapVideo.current.play();
-    bondVideo.current.play();
-    styleVideo.current.play();
+  //   swapVideo.current.play();
+  //   bondVideo.current.play();
+  //   styleVideo.current.play();
     frogBop.current.play();
     
   }, [])
@@ -30,18 +30,26 @@ export default function Home() {
       <SEO title="Lofi Beats to Match-3 To"/>
       <LandingKeyArt/>
       <GameboardLayout>
-        <div className="mb-24"> 
+        <div className="mb-24 relative"> 
           <h1 className="font-header text-6xl mb-6 cta-heading">Wishlist on</h1>
           {/* TODO: Get Steam page link for game. */}
-          <Button cursor  bg="rgb(132 63 148 / 35%)" aria="spirit swap steam page" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To" className="m-auto">
+          <Button cursor  bg="rgb(132 63 148 / 35%)" aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To" className="m-auto">
             <img src="/SteamLogo.svg" alt="steam logo" className="text-white m-auto" style={{maxWidth: '176px'}}/>
+
+            <img src="circle.png" className="absolute spirit-circle pointer-events-none" />
           </Button>
+
+          
         </div>
-        <div>
+        <div className='relative'>
         <h1 className="font-header text-6xl mb-6 cta-heading">Tune in and</h1>
-          <Button alt bg="rgba(26, 14, 51, 0.72)" aria="spirit swap demo" ultra className="m-auto mb-20" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To/">
+          <Button alt bg="rgba(26, 14, 51, 0.72)" aria="spirit swap demo" ultra className="m-auto mb-20 relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To/">
               <h1 className="font-header text-4xl p-3">Play the Demo!</h1>
+
+              <img src="square.png" className="absolute spirit-square pointer-events-none" />
           </Button>
+
+          
         </div>
 
         <h1 className="video-cta font-header text-6xl mb-6 leading-relaxed m-auto" style={{maxWidth: '1400px'}}>
@@ -60,42 +68,45 @@ export default function Home() {
         {/* Features */}
         <div className="info-grid">
           <InfoBlock>
-            <h1 className="font-header text-7xl leading-relaxed">
-              <span className="gradient-text pb-2">
+            <h1 className="font-header text-7xl leading-relaxed whitespace-nowrap">
+              <span className="gradient-text pb-2 ">
               💫 Swap 💫
               </span>
             </h1>
             <div className="footage swap">
-              <video preload="true" ref={swapVideo} autoPlay muted loop type="video/mp4" src="/footage/Match.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
-              </video>
+            <img src="/footage/spiswa-01.gif" className="rounded-xl drop-shadow-2xl object-cover mb-4" />
+              {/* <video preload="true" ref={swapVideo} autoPlay muted loop type="video/mp4" src="/footage/Match.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
+              </video> */}
             </div>
             <p className="text-2xl leading-relaxed">
             Cast powerful spells by arranging spirits into special patterns to unlock potent powers on your own or together with friends (local co-op)!
             </p>
           </InfoBlock>
           <InfoBlock>
-            <h1 className="font-header text-7xl leading-relaxed">
+            <h1 className="font-header text-7xl leading-relaxed whitespace-nowrap">
               <span className="gradient-text pb-2">
               💞 Bond 💞
               </span>
             </h1>
             <div className="footage bond">
-              <video preload="true" ref={bondVideo} autoPlay muted loop type="video/mp4" src="/footage/Bond.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
-              </video>
+            <img src="/footage/spiswa-02.gif" className="rounded-xl drop-shadow-2xl object-cover mb-4" />
+              {/* <video preload="true" ref={bondVideo} autoPlay muted loop type="video/mp4" src="/footage/Bond.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
+              </video> */}
             </div>
             <p className="text-2xl leading-relaxed"> 
             Bond with a cast of witches and demons… and maybe even smooch!
             </p>
           </InfoBlock>
           <InfoBlock>
-            <h1 className="font-header text-7xl leading-relaxed">
+            <h1 className="font-header text-7xl leading-relaxed whitespace-nowrap">
               <span className="gradient-text pb-2">
               🖌️ Style 🖌️
               </span>
             </h1>
             <div className="footage style">
-              <video preload="true" ref={styleVideo} autoPlay muted loop type="video/mp4" src="/footage/Decorate.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
-              </video>
+              <img src="/footage/spiswa-08.png" className="rounded-xl drop-shadow-2xl object-cover mb-4" />
+              {/* <video preload="true" ref={styleVideo} autoPlay muted loop type="video/mp4" src="/footage/Decorate.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
+              </video> */}
             </div>
             <p className="text-2xl leading-relaxed">
             Decorate your bedroom. Earn trinkets and keepsakes as you play, then place them in Samar’s room to impact gameplay.
@@ -106,6 +117,7 @@ export default function Home() {
         {/* Music */}
         <div className="music m-auto flex flex-row mb-32">
           <div className="characters relative">
+            <img src="/flower.png" className="spirit-sound absolute animate-music-bounce" />
             <video preload="true" ref={frogBop} autoPlay muted loop type="video/webm" src="/frog_bop.webm" className="frog absolute bottom-0"/>
           </div>
           <div className="content text-left flex flex-col justify-around px-5" style={{flex: '2'}}>
@@ -262,8 +274,13 @@ export default function Home() {
           }
 
           .music .characters .frog {
-             max-height: 500px; 
+             max-height: 400px; 
              left: 20px;
+          }
+
+          .music .characters .spirit-sound {
+            width: 25rem;
+            right: 0;
           }
 
           .music .content {
@@ -274,10 +291,35 @@ export default function Home() {
             margin: auto;
           }
 
+          .spirit-circle {
+            top: -150%;
+            width: 19rem;
+            left: -90%;
+            transform: rotate(25deg);
+          }
 
+          .spirit-square {
+            right : -100%;
+            width: 23rem;
+            top: -230%;
+          }
 
-          @media (max-width: 1200px)
+          @media (max-width: 1368px)
           {
+
+          .spirit-circle {
+            top: -150%;
+            width: 19rem;
+            left: -85%;
+            transform: rotate(25deg);
+          }
+
+          .spirit-square {
+            right : -82%;
+            width: 23rem;
+            top: -202%;
+          }
+
             .info-grid {
               grid-template-columns: unset;
               grid-template-rows: 1fr 1fr 1fr;
@@ -345,6 +387,13 @@ export default function Home() {
           }
 
           @media (max-width: 600px) {
+          .spirit-circle {
+            display: none;
+          }
+
+          .spirit-square {
+            display: none;
+          }
             .cta-heading, .video-cta, .on-beat-header  {
               font-size: 10vw;
               
@@ -408,9 +457,14 @@ export default function Home() {
             }
 
             .music .characters .frog {
-              max-height: 500px; 
+              max-height: 300px; 
               left: unset; 
               bottom: -17px;
+            }
+
+            .music .characters .spirit-sound {
+              width: 20rem;
+              right: -10px;
             }
 
             .music .content .info {

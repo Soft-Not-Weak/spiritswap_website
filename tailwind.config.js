@@ -23,8 +23,21 @@ module.exports = {
       },
       animation: {
         'scroll': 'scroll 4s ease infinite',
+        bounce : 'bounce 1200ms ease infinite',
+        'music-bounce' : 'music-bounce 1200ms ease infinite',
       },
-      
+      keyframes : {
+        'music-bounce' : {
+          '0%, 100%' : { 
+            transform: 'translateY(-25%) rotate(20deg)',
+            "animation-timing-function" : "cubic-bezier(0.8,0,1,1)"
+           },
+          '50%' : {
+            transform: 'translateY(0%) rotate(-10deg)',
+            "animation-timing-function" : "cubic-bezier(0,0,0.2,1)"
+          }
+        }
+      }
     },
   },
   variants: {
