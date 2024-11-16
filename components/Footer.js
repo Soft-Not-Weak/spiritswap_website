@@ -1,30 +1,53 @@
+import Button from "./Button"
 
-const Footer = () => (
+const Footer = ({ hero }) => (
 	<footer className="flex items-center justify-between p-4 m-auto">
 		<div className="icons flex">
-			{/* TODO: Add Icons */}
-			<a target="_blank" rel="noreferrer" aria-label="soft not weak twitter" href="https://twitter.com/softnotweak">
-				<img src="/Twitter.svg" alt="twitter" style={{width: '33px', height: '40px'}}/>
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak twitter" href="https://softnotweak.bsky.social">
+				<img src="/bluesky_icon.svg" alt="twitter" style={{width: '43px', height: '50px'}}/>
 			</a>
 			<a target="_blank" rel="noreferrer" aria-label="soft not weak instagram" href="https://www.instagram.com/softnotweak/">
-				<img src="/Instagram.svg" alt="instagram" style={{width: '33px', height: '40px'}}/>
+				<img src="/Instagram.svg" alt="instagram" style={{width: '43px', height: '50px'}}/>
 			</a>
 			<a target="_blank" rel="noreferrer" aria-label="soft not weak youtube" href="https://www.youtube.com/channel/UC8aq14JaN7BbCe2Tnrda10A">
-				<img src="/Youtube.svg" alt="youtube" style={{width: '34px', height: '40px'}}/>
+				<img src="/Youtube.svg" alt="youtube" style={{width: '44px', height: '50px'}}/>
 			</a>
 			<a target="_blank" rel="noreferrer" aria-label="soft not weak tiktok" href="https://www.tiktok.com/@softnotweak?lang=en">
-				<img src="/TikTok.svg" alt="tiktok" style={{width: '32px', height: '40px'}}/>
+				<img src="/TikTok.svg" alt="tiktok" style={{width: '42px', height: '50px'}}/>
 			</a>
 			
 			<a href="mailto:contact@softnotweak.com" rel="noreferrer" aria-label="soft not weak contact email">
-				<img src="/mail.svg" alt="mail" style={{width: '35px', height: '40px'}}/>
+				<img src="/mail.svg" alt="mail" style={{width: '45px', height: '50px'}}/>
 			</a>
 		</div>
+		{hero && 
+			<>
+				
+				<div className="buttons">
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+						Play the Demo
+					</Button>
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+						<img src="/icons/computer_icon.svg" alt="steam logo" className="text-white mr-6 my-1" style={{width: '4rem', height : '4rem'}}/> PC | Mac | Linux
+					</Button>
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+						<img src="/icons/XboxLogo.svg" alt="steam logo" className="text-white mr-6 my-1" style={{width: '3.5rem', height : '4rem'}}/> Xbox
+					</Button>
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+						<img src="/icons/NintendoSwitchLogo.svg" alt="steam logo" className="text-white mr-6 my-1" style={{width: '3.5rem', height : '4rem'}}/> Nintendo Switch
+					</Button>
+				</div>
+			</>
+			
+		}
 		<div className="right-links">
-			<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-2xl mr-8" href="https://press.softnotweak.com/spiritswap">
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-3xl mr-8" href="https://press.softnotweak.com/spiritswap">
 				Presskit
 			</a>
-			<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-2xl" href="/humans.txt">
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-3xl mr-8" href="https://k1zwm815u8b.typeform.com/to/CZBiZ0mu">
+				Request Key
+			</a>
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-3xl" href="/humans.txt">
 				Humans
 			</a>
 		</div>
@@ -35,6 +58,20 @@ const Footer = () => (
 				padding-left: 1%;
 				padding-right: 1%;
 			}
+
+			.buttons {
+				position: absolute;
+				width: 100%;
+				left: 50%;
+				transform: translateX(-50%);
+				display: flex;
+				flex-direction: row;
+				justify-content: space-evenly;
+				align-items: flex-end;
+				bottom: 8rem;
+			}
+
+			
 
 			.icons a {
 				display: flex; 

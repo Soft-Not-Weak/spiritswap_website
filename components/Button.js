@@ -12,15 +12,37 @@ const Button  = ({bg, ultra, alt, cursor, children, fullWidth, aria, to, classNa
 						<img src="/Cursor.png" alt="cursor edge" className="absolute edge"/>
 						<img src="/Cursor.png" alt="cursor edge" className="absolute edge"/>
 					</div>
-					<div className="rounded-lg p-1" style={{background: bg}}>
+					<div className="rounded-lg p-1 container" style={{background: bg}}>
 						{children}
 					</div>
 					<style jsx>{`
+						.container {
+							width: 100%;
+							min-height: 81px;
+							font-size: 2rem;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-weight: bold;
+						}
+
 						.ultra-button {
 							position: relative;
 							max-width: 434px;
 							transform: scale(1);
 							transition: transform .164s ease-out;
+						}
+
+						.steam-button {
+							width: 30rem;
+							background: rgba(26, 14, 51, 0.72);
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							font-size: 2rem;
+							min-height: 88px;
+							margin-left:1rem;
+							marign-right: 1rem;
 						}
 
 						.ultra-button:hover {

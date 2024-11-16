@@ -1,44 +1,98 @@
 import Button from '../components/Button'
 import Timer from '../components/Timer'
+import Footer from './Footer';
 
 const LandingKeyArt = () => (
-	<header className="relative h-screen" role="main">
+	<header className="relative" role="main">
 		{/* Background */}
 		<div className="relative">
-			<img src="/keyart/Background.png" alt="moonlit background" className="absolute h-screen object-cover object-left w-screen"/>
-			<img src="/keyart/Fireflies_BG.png" alt="fireflies" className="absolute h-screen object-cover object-left w-screen"/>
-		</div>
-		{/* Characters and Logo */}
-		<div className="absolute z-10 w-full h-full overflow-hidden">
-			<img src="/keyart/Samar.png" alt="samar" className="samar absolute bottom-0 z-10"/>
-			<img src="/keyart/Dio.png" alt="dio" className="dio absolute -bottom-5"/>
-			<img src="/keyart/Kedsi.png" alt="kedsi" className="kedsi absolute bottom-0" />
+			<img src="/keyart/KeyArt_BG.png" alt="moonlit background with halftone styling" className="absolute h-screen object-cover object-left w-screen"/>
+			<img src="/keyart/KeyArt_Samar.png" alt="Samar holding out their hand" className="absolute h-screen object-cover object-left w-screen"/>
+			<img src="/keyart/KeyArt_Spirits.png" alt="Spirit shapes looking cute with some key Spirit Swap characters hanging from them" className="absolute h-screen object-cover object-left w-screen"/>
 		</div>
 		{/* Foreground */}
-		<div className="absolute w-full h-full z-10">
-			<img src="/keyart/Fireflies.png" alt="fireflies" className="fireflies absolute h-full w-full object-cover"/>
-			<img src="/keyart/Overlay.png" alt="grain overlay" className="overlay absolute opacity-50 h-full w-full object-cover"/>
-			<img src="/keyart/Bushes_BG.png" alt="bushes" className="bushes absolute h-full w-full object-cover object-bottom"/>
+		<div className="absolute w-full h-full z-20">
 			<div className="gamelogo absolute">
-				<img src="/GameLogo.png" alt="spirit swap logo" className="m-auto w-full mb-4"/>
-				<Button cursor alt bg="rgba(26, 14, 51, 0.72)" aria="spirit swap demo" ultra className="m-auto mb-2 w-full" to="https://www.kickstarter.com/projects/softnotweak/spirit-swap/posts/4199786">
-				<h1 className="font-header text-4xl p-3 text-center">Kickstarter Backer Beta is Live</h1>
-				</Button>
-				<div className="content mb-24 text-center">
-					<img src="/chevron.svg" alt="scroll indicator" className="chevron bottom-0 animate-bounce m-auto"/>
+				<img src="/keyart/KeyArt_Logo.png" alt="spirit swap logo" className="m-auto w-full mb-4"/>
+				
+				<div className="cta-container rounded-full">
+					<h1 className="launch-cta"> 
+						Coming Feb 3, 2025
+					</h1>
 				</div>
 			</div>
 			
+			<div className="footer-container rounded-lg">
+				<Footer hero/>
+				<div className="chevron-container content mb-24 text-center">
+					<img src="/chevron.svg" alt="scroll indicator" className="chevron bottom-0 animate-bounce m-auto"/>
+				</div>
+			</div>
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak main site" href="https://press.softnotweak.com/">
+			<img src="/Logo_SNW_White.png" alt="Soft Not Weak Logo White" className="snw-logo"/>
+			</a>
 		</div>
 		
 		<style jsx>
 			{`
+				header { 
+					height: 94vh;
+				}
+
+				.snw-logo {
+					width: 12rem;
+					position: absolute;
+					right: 1rem;
+					bottom: 1rem;
+					filter: drop-shadow(0 0 0.5rem #0B031ACC);
+				}
+
+				.cta-container {
+					background: #0B031ACC;
+					padding: 1rem;
+					backdrop-filter: blur(10px);
+					width: 80%;
+					margin: auto;
+				} 
+
+				.launch-cta {
+					text-align: center;
+					font-size: 3.5rem;
+					font-weight: unset;
+					font-family: NutmegHeadline-Black;
+					background: -webkit-linear-gradient( -90deg, #FFDA5C 5%, #FFDA5C 53%, #FC9C67 71% );
+					background-clip: border-box;
+					-webkit-background-clip: text;
+					-webkit-text-stroke: 10px transparent;
+					color: #0B031A;
+					white-space: no-wrap;
+				}
+
+				.chevron-container {
+					position: absolute;
+					left: 50%;
+					top:70%;
+					transform: translate(-50%, -50%);
+				}
+
+				.footer-container {
+					position: absolute;
+					bottom: -3rem;
+					max-width: 1700px;
+					width: 100%;
+					left: 50%;
+					transform: translateX(-50%);
+					background: #0B031ACC;
+					padding: 1rem;
+					backdrop-filter: blur(10px);
+	
+				}
 				.gamelogo {
-					width: 30%;
+					width: 80%;
 					min-width: 500px;
-					max-width: 780px;
-					left: 22%;
-					top: 8vw;
+					max-width: 860px;
+					left: 6%;
+					top: 3vw;
 					transform: unset;
 				}
 
