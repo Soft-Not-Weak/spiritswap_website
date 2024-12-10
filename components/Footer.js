@@ -43,13 +43,13 @@ const Footer = ({ hero }) => (
 			<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-3xl mr-8" href="https://drive.google.com/drive/u/0/folders/1SJsoiyeSjcMrvgqYyZhDJUzxgNBgI0lA">
 				Presskit
 			</a>
-			<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-3xl mr-8" href="https://k1zwm815u8b.typeform.com/to/CZBiZ0mu">
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak request a key form" className="text-3xl mr-8" href="https://k1zwm815u8b.typeform.com/to/CZBiZ0mu">
 				Request Key
 			</a>
-			<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-3xl mr-8" href="/humans.txt">
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak credits so far" className="text-3xl mr-8" href="/humans.txt">
 				Humans
 			</a>
-			<a target="_blank" rel="noreferrer" aria-label="soft not weak presskit" className="text-3xl" href="/privacy">
+			<a target="_blank" rel="noreferrer" aria-label="soft not weak privacy policy" className="text-3xl" href="/privacy">
 				Privacy
 			</a>
 		</div>
