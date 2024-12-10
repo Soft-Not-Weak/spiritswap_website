@@ -6,12 +6,12 @@ const LandingKeyArt = () => (
 	<header className="relative" role="main">
 		{/* Background */}
 		<div className="relative">
-			<img src="/keyart/KeyArt_BG.png" alt="moonlit background with halftone styling" className="absolute h-screen object-cover object-left w-screen"/>
-			<img src="/keyart/KeyArt_Samar.png" alt="Samar holding out their hand" className="absolute h-screen object-cover object-left w-screen"/>
-			<img src="/keyart/KeyArt_Spirits.png" alt="Spirit shapes looking cute with some key Spirit Swap characters hanging from them" className="absolute h-screen object-cover object-left w-screen"/>
+			<img src="/keyart/KeyArt_BG.png" alt="moonlit background with halftone styling" className="absolute h-screen object-cover object-center w-screen "/>
+			<img src="/keyart/KeyArt_Samar.png" alt="Samar holding out their hand" className="samar-key absolute h-screen object-cover object-center w-screen max-width"/>
+			<img src="/keyart/KeyArt_Spirits.png" alt="Spirit shapes looking cute with some key Spirit Swap characters hanging from them" className="spirit-key absolute h-screen object-cover object-center w-screen max-width"/>
 		</div>
 		{/* Foreground */}
-		<div className="absolute w-full h-full z-20">
+		<div className="absolute w-full h-full z-20 max-width">
 			<div className="gamelogo absolute">
 				<img src="/keyart/KeyArt_Logo.png" alt="spirit swap logo" className="m-auto w-full mb-4"/>
 				
@@ -19,6 +19,20 @@ const LandingKeyArt = () => (
 					<h1 className="launch-cta"> 
 						Coming Feb 3, 2025
 					</h1>
+				</div>
+				<div className="buttons">
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+						Play the Demo!
+					</Button>
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+						<img src="/icons/computer_icon.svg" alt="steam logo" className="text-white mr-6 my-1" style={{width: '4rem', height : '4rem'}}/> PC | Mac | Linux
+					</Button>
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+						Presskit
+					</Button>
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+						Request Key
+					</Button>
 				</div>
 			</div>
 			
@@ -28,9 +42,7 @@ const LandingKeyArt = () => (
 					<img src="/chevron.svg" alt="scroll indicator" className="chevron bottom-0 animate-bounce m-auto"/>
 				</div>
 			</div>
-			<a target="_blank" rel="noreferrer" aria-label="soft not weak main site" href="https://press.softnotweak.com/">
 			<img src="/Logo_SNW_White.png" alt="Soft Not Weak Logo White" className="snw-logo"/>
-			</a>
 		</div>
 		
 		<style jsx>
@@ -39,11 +51,21 @@ const LandingKeyArt = () => (
 					height: 94vh;
 				}
 
+				.desktop-only {
+					display: initial;
+				}
+
+				.max-width {
+					max-width: 2560px;
+					left: 50%;
+					transform: translateX(-50%);
+				}
+
 				.snw-logo {
 					width: 12rem;
 					position: absolute;
 					right: 1rem;
-					bottom: 1rem;
+					top: 1rem;
 					filter: drop-shadow(0 0 0.5rem #0B031ACC);
 				}
 
@@ -57,7 +79,7 @@ const LandingKeyArt = () => (
 
 				.launch-cta {
 					text-align: center;
-					font-size: 3.5rem;
+					font-size: 3rem;
 					font-weight: unset;
 					font-family: NutmegHeadline-Black;
 					background: -webkit-linear-gradient( -90deg, #FFDA5C 5%, #FFDA5C 53%, #FC9C67 71% );
@@ -88,12 +110,13 @@ const LandingKeyArt = () => (
 	
 				}
 				.gamelogo {
-					width: 80%;
-					min-width: 500px;
-					max-width: 860px;
+					width: 34vw;
+					min-width: 510px;
+					max-width: 760px;
 					left: 6%;
-					top: 3vw;
+					top: 3rem;
 					transform: unset;
+					text-align: center;
 				}
 
 				.gamelogo .cta-heading {
@@ -127,86 +150,109 @@ const LandingKeyArt = () => (
 					width: 6rem;
 				}
 
-				@media (max-width: 985px)
+				.buttons {
+				display: none;
+				}
+
+				@media (max-width: 1770px)
 				{
-					.samar {
-						width: 49%;
-						min-width: unset; 
-						right: -7%;
+					.launch-cta {
+						font-size: 2.5rem;
 					}
 
-					.dio {
-						width: 44%;
-						max-width: 628px;
-						min-width: unset;
-						right: 17%; 
+					.buttons {
+						display: flex; 
+						flex-direction: column;
+						align-items: center;
+						margin-top: 0.5rem;
+					}
+				}
+
+				@media (max-width:2206px)
+				{
+					.cta-container {
+						width: 100%;
+					}
+				}
+
+				@media (max-width:1770px)
+				{
+					.desktop-only {
+						display: none;
+					} 
+
+					.chevron-container {
+						position: absolute;
+						left: 50%;
+						top:110%;
+						transform: translate(-50%, -50%);
+					}
+				}
+
+				@media (max-width: 1220px)
+				{
+				
+					.samar-key {
+						width: 200%;
+						left: 33%;
 					}
 
-					.kedsi {
-						width: 25%; 
-						max-width: 298px;
-						min-width: unset;
-						left: 6%; 
+					.spirit-key {
+						display: none;
 					}
 
 					.gamelogo {
 						left: 50%;
 						transform: translateX(-50%);
+						top: unset;
+						bottom: 5rem;
+						width: 100vw;
 					}
 
-					.bushes {
-						width: 100vw;
-						object-fit: contain;
+					.gamelogo img {
+						width: 80%;
 					}
-	
-					.fireflies {
-						width: 100vw;
-						opacity: 0.32;
-						object-fit: contain;
+
+					.buttons {
+						display: grid;
+						justify-content: center;
+						grid-template-columns: repeat(2, 1fr);
+						gap: 0.5rem;
 					}
 				}
 
-				@media (max-width: 600px) {
-					.samar {
-						width: 74%;
-						right: -24%;
+				@media (max-width: 985px)
+				{
+					.desktop-only {
+						display: none;
+					} 
+				}
+
+				@media (max-width: 873px)
+				{
+				header { 
+					height: 100vh;
+				}
+					.buttons {
+						display: grid;
+						justify-content: center;
+						grid-template-columns: repeat(1, 1fr);
+						gap: 0.5rem;
 					}
 
-					.dio {
-						width: 74%;
-						right: 30%;
-						z-index: 0;
+					.snw-logo {
+						width: 7rem;
 					}
 
-					.kedsi {
-						min-width: unset; 
-						z-index:0;
-						transform: scaleX(-1);
-						width: 45%; 
-						right: 26%;
-						left: unset;
-						bottom: -4%; 
+					.launch-cta {
+						font-size: 5vw;
 					}
 
-					.gamelogo {
-						min-width: unset; 
-						width: 100%; 
-						top: 9%; 
-						max-width: 435px;
+					.footer-container {
+						bottom: -5rem;
 					}
 
-					.gamelogo .content {
-						padding-left: 28px;
-						padding-right: 28px;
-					}
-
-					.gamelogo .cta-heading {
-						font-size: 10vw;
-					}
-
-					.chevron {
-						width: 20vw; 
-					}
+				
 				}
 
 			`}

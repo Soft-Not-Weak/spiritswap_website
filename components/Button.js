@@ -42,7 +42,33 @@ const Button  = ({bg, ultra, alt, cursor, children, fullWidth, aria, to, classNa
 							font-size: 2rem;
 							min-height: 88px;
 							margin-left:1rem;
-							marign-right: 1rem;
+							margin-right: 1rem;
+						}
+
+						.steam-button.logo {
+							margin-left:0;
+							margin-right:0;
+							margin-bottom: 1rem;
+						}
+
+						@media (max-width: 1770px) {
+							.steam-button.logo {
+								min-height: 68px;
+								margin-bottom:0.5rem;
+							}
+
+							.steam-button.logo .container {
+								height: 65px;
+								min-height: unset;
+							}
+						}
+
+						@media (max-width: 873px)
+						{
+							.steam-button.logo {
+								max-width: unset;
+								width: 100%;
+							}
 						}
 
 						.ultra-button:hover {
@@ -63,7 +89,7 @@ const Button  = ({bg, ultra, alt, cursor, children, fullWidth, aria, to, classNa
 							transform: scaleX(1) scaleY(0.7);
 							background: linear-gradient(to right, #fec204 0%,#fbb711 7%,#f5a02e 19%,#f0894a 28%,#e66576 41%,#e5607e 43%,#e652a8 49%,#e74bbe 53%,#e845ce 58%,#e843d5 62%,#e843d5 64%,#e342d1 65%,#4900aa 83%,#1a0e33 100%);
 							background-size: 400%;
-							animation: 'scroll' 4s ease infinite;
+							animation: scroll 4s ease infinite;
 						}
 
 						.ultra-button.alt::after {
@@ -80,7 +106,7 @@ const Button  = ({bg, ultra, alt, cursor, children, fullWidth, aria, to, classNa
 							transform: scaleX(1) scaleY(0.7);
 							background: linear-gradient(to right, #49baa9 0%,#0e6c6c 33%,#121e5d 67%,#c335d8 100%);
 							background-size: 400%;
-							animation: 'scroll' 4s ease infinite;
+							animation: scroll 4s ease infinite;
 						}
 
 						.cursorEdges > .edge {

@@ -37,9 +37,8 @@ export default function Home() {
         </h1>
 
         <div className="m-auto mb-7" style={{maxWidth: '1364px'}}>
-          <Youtube embed="WC2WoJzm4rI" />
+          <Youtube embed="0A20z2g9DBU" />
         </div>
-
         <p className="video-subtext m-auto text-4xl leading-relaxed w-full mb-28" style={{maxWidth: '1283px'}}>
           Spirit Swap is an action-puzzle game set in a lush, narrative-driven world of witchy demons.  
         </p>
@@ -72,7 +71,7 @@ export default function Home() {
               </video> */}
             </div>
             <p className="text-2xl leading-relaxed"> 
-            Bond with a cast of witches and demons… and maybe even smooch!
+            Bond with a cast of witches and demons (and maybe even smooch!) in a story about helping your friends and taking care of one another.
             </p>
           </InfoBlock>
           <InfoBlock>
@@ -82,7 +81,7 @@ export default function Home() {
               </span>
             </h1>
             <div className="footage style">
-              <img src="/footage/spiswa-08.png" className="rounded-xl drop-shadow-2xl object-cover mb-4" />
+              <img src="/footage/spiswa-08.gif" className="rounded-xl drop-shadow-2xl object-cover mb-4" />
               {/* <video preload="true" ref={styleVideo} autoPlay muted loop type="video/mp4" src="/footage/Decorate.mp4" className="rounded-xl drop-shadow-2xl object-cover mb-4">
               </video> */}
             </div>
@@ -101,7 +100,7 @@ export default function Home() {
           <div className="content text-left flex flex-col justify-around px-5" style={{flex: '2'}}>
             <p className="info text-4xl leading-relaxed">
               {/* TODO: Link to meltycanon? */}
-              🎵 Coast your swap cursor to a custom lofi hip hop soundtrack by the incredible Meltycanon.
+              🎵 <b>Vibe to a custom lofi soundtrack</b> by the incredible Meltycanon as you reassemble lost spirits and send them back home. 
             </p>
             <div className="flex soundcloud-container">
               <div className="soundcloud mr-10 flex-1">
