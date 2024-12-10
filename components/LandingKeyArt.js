@@ -21,16 +21,16 @@ const LandingKeyArt = () => (
 					</h1>
 				</div>
 				<div className="buttons">
-					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap demo link" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
 						Play the Demo!
 					</Button>
-					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
 						<img src="/icons/computer_icon.svg" alt="steam logo" className="text-white mr-6 my-1" style={{width: '4rem', height : '4rem'}}/> PC | Mac | Linux
 					</Button>
-					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap press kit" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
 						Presskit
 					</Button>
-					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap request a key form" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
 						Request Key
 					</Button>
 				</div>
