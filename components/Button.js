@@ -67,7 +67,8 @@ const Button  = ({bg, ultra, alt, cursor, children, fullWidth, aria, to, classNa
 						{
 							.steam-button.logo {
 								max-width: unset;
-								width: 100%;
+								width: 95vw;
+								margin: auto;
 							}
 						}
 

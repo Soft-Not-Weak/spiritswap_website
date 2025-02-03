@@ -34,8 +34,8 @@ const Footer = ({ hero }) => (
 					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap xbox page" to="https://www.xbox.com/en-us/games/store/spirit-swap-lofi-beats-to-match-3-to/9ns3x5vfjvxq">
 						<img src="/icons/XboxLogo.svg" alt="xbox logo" className="text-white mr-6 my-1" style={{width: '3.5rem', height : '4rem'}}/> Xbox
 					</Button>
-					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
-						Wishlist Today!
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page" to="https://meltycanon.bandcamp.com/album/spirit-swap-lofi-beats-to-match-3-to">
+					 🎵 Soundtrack
 					</Button>
 					{/* <Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
 						<img src="/icons/NintendoSwitchLogo.svg" alt="steam logo" className="text-white mr-6 my-1" style={{width: '3.5rem', height : '4rem'}}/> Nintendo Switch

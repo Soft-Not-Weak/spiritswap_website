@@ -14,14 +14,22 @@ const LandingKeyArt = () => (
 		<div className="absolute w-full h-full z-20 max-width">
 			<div className="gamelogo absolute">
 				<img src="/keyart/KeyArt_Logo.png" alt="spirit swap logo" className="m-auto w-full mb-4"/>
-				
+				<div className="cta-container">
+					<h1 className="launch-cta"> 
+						Available NOW!
+					</h1>
+				</div>
 				
 				<div className="buttons">
+				
 					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
 					<img src="/SteamLogo.svg" alt="steam logo" className="text-white my-1" style={{width: '70%', height : '4rem'}}/>
 					</Button>
-					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page" to="https://www.xbox.com/en-us/games/store/spirit-swap-lofi-beats-to-match-3-to/9ns3x5vfjvxq">
 					<img src="/icons/XboxLogo.svg" alt="xbox logo" className="text-white mr-6 my-1" style={{width: '3.5rem', height : '4rem'}}/> Xbox
+					</Button>
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap steam page" to="https://meltycanon.bandcamp.com/album/spirit-swap-lofi-beats-to-match-3-to">
+					 🎵 Soundtrack
 					</Button>
 					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap press kit" to="https://drive.google.com/drive/u/0/folders/1SJsoiyeSjcMrvgqYyZhDJUzxgNBgI0lA">
 						Presskit
@@ -66,7 +74,17 @@ const LandingKeyArt = () => (
 				}
 
 			
-
+				.cta-container {
+					display: none;
+					background: #0B031ACC;
+					padding: 1rem;
+					backdrop-filter: blur(10px);
+					position: absolute;
+					left: 50%;
+					top: -8.5rem;
+					transform: translateX(-50%);
+					width: 100vw;
+				} 
 				
 
 				.chevron-container {
@@ -89,7 +107,7 @@ const LandingKeyArt = () => (
 	
 				}
 				.gamelogo {
-					width: 35vw;
+					width: 39vw;
 					min-width: 510px;
 					max-width: 820px;
 					left: 12%;
@@ -142,6 +160,12 @@ const LandingKeyArt = () => (
 						align-items: center;
 						margin-top: 0.5rem;
 					}
+
+					.cta-container {
+						display: block;
+						position: relative;
+						top: unset;
+					}
 				}
 
 				
@@ -159,7 +183,7 @@ const LandingKeyArt = () => (
 					}
 				}
 
-				@media (max-width: 1220px)
+				@media (max-width: 1600px)
 				{
 				
 					.samar-key {
@@ -242,12 +266,6 @@ const LandingKeyArt = () => (
 					color: #0B031A;
 					white-space: no-wrap;
 				}
-			@media (max-width:2206px)
-				{
-					.cta-container {
-						width: 100%;
-					}
-				}
 
 			@media (max-width: 873px)
 				{	
@@ -256,18 +274,7 @@ const LandingKeyArt = () => (
 					}
 				}
 
-				.cta-container {
-					background: #0B031ACC;
-					padding: 1rem;
-					backdrop-filter: blur(10px);
-					width: 80%;
-					margin: auto;
-					position: absolute;
-					left: 50%;
-					top: -8.5rem;
-					transform: translateX(-50%);
-					width: 100vw;
-				} 
+				
 
 			`}
 		</style>
