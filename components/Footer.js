@@ -23,15 +23,20 @@ const Footer = ({ hero }) => (
 			<>
 				
 				<div className="buttons">
-					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
-						Play the Demo!
+				<div className="cta-container">
+					<h1 className="launch-cta"> 
+						Available NOW!
+					</h1>
+				</div>
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+						<img src="/SteamLogo.svg" alt="steam logo" className="text-white my-1" style={{width: '70%', height : '4rem'}}/>
 					</Button>
-					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
-						<img src="/icons/computer_icon.svg" alt="steam logo" className="text-white mr-6 my-1" style={{width: '4rem', height : '4rem'}}/> PC | Mac | Linux
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap xbox page" to="https://www.xbox.com/en-us/games/store/spirit-swap-lofi-beats-to-match-3-to/9ns3x5vfjvxq">
+						<img src="/icons/XboxLogo.svg" alt="xbox logo" className="text-white mr-6 my-1" style={{width: '3.5rem', height : '4rem'}}/> Xbox
 					</Button>
-					{/* <Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
-						<img src="/icons/XboxLogo.svg" alt="steam logo" className="text-white mr-6 my-1" style={{width: '3.5rem', height : '4rem'}}/> Xbox
-					</Button> */}
+					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
+						Wishlist Today!
+					</Button>
 					{/* <Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button" ultra aria="spirit swap steam page relative" to="https://store.steampowered.com/app/1592170/Spirit_Swap_Lofi_Beats_to_Match3_To">
 						<img src="/icons/NintendoSwitchLogo.svg" alt="steam logo" className="text-white mr-6 my-1" style={{width: '3.5rem', height : '4rem'}}/> Nintendo Switch
 					</Button> */}
@@ -91,14 +96,14 @@ const Footer = ({ hero }) => (
 						display: initial;
 					} 
 
-			@media (max-width: 1770px)
+			@media (max-width: 1600px)
 				{
 					.buttons {
 						display: none;
 					}
 				}
 
-			@media (max-width:1770px)
+			@media (max-width:1600px)
 				{
 				.footer-hero {
 					display: none;
@@ -131,6 +136,52 @@ const Footer = ({ hero }) => (
 					margin-right: 2rem;
 				}
 			}
+
+			@media (max-width: 1600px)
+				{
+					.launch-cta {
+						font-size: 2.5rem;
+					}
+		}
+
+			.launch-cta {
+					text-align: center;
+					font-size: 3.5rem;
+					font-weight: unset;
+					font-family: NutmegHeadline-Black;
+					background: -webkit-linear-gradient( -90deg, #FFDA5C 5%, #FFDA5C 53%, #FC9C67 71% );
+					background-clip: border-box;
+					-webkit-background-clip: text;
+					-webkit-text-stroke: 10px transparent;
+					color: #0B031A;
+					white-space: no-wrap;
+				}
+			@media (max-width:2206px)
+				{
+					.cta-container {
+						width: 100%;
+					}
+				}
+
+			@media (max-width: 873px)
+				{	
+					.launch-cta {
+						font-size: 5vw;
+					}
+				}
+
+				.cta-container {
+					background: #0B031ACC;
+					padding: 1rem;
+					backdrop-filter: blur(10px);
+					width: 80%;
+					margin: auto;
+					position: absolute;
+					left: 50%;
+					top: -8.5rem;
+					transform: translateX(-50%);
+					width: 100vw;
+				} 
 		`}</style>
 	</footer>
 )

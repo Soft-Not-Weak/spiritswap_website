@@ -5,43 +5,15 @@
 
 _,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,_     
 
-💫 Website and Game Logo Made with Love by: Réjon Taylor-Foster (@Maximum_Crash, https://rejontaylor.com)
+💫 Website and Game Logo Made with Love by: Réjon Taylor-Foster (Maximum Crash on Everything, https://rejontaylor.com)
 
-💫 Landing Key Art by: Dice (https://thedicegoddess.com)
+💫 Landing Key Art by: Sam (https://thedicegoddess.com)
 
 💫 Copywriting by: Jenny Windom (@kimchica25) and Alex
 
-💫 Featuring Animations by: Khei & more
+💫 Featuring Animations by: Khei Espinoza & Kait "Dice" Peavler
 
 💫 Featuring Music by: meltycanon (@meltycanon)
 
 _,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,__,.-'~'-.,_
-                            
-/* TEAM */
-Creative Director, Soft Not Weak: Alex
-
-Programming, Soft Not Weak: Morgan Lavelle
-
-UI/UX, Soft Not Weak: Réjon Taylor-Foster
-
-Production, Soft Not Weak: Jenny Windom
-
-Character Art: Dice
-
-Character Art: Sam Tesi
-
-Animation: Khei
-
-Animation: Chris
-
-Background Art + Animation: Jenny Mori
-
-Concept Art: Jenna Yow
-
-Concept Art: Morgan Madeline
-
-Comic Art: Beniam Hollman
-
-Music: meltycanon
-
                             
