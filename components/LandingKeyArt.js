@@ -34,9 +34,6 @@ const LandingKeyArt = () => (
 					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap press kit" to="https://drive.google.com/drive/u/0/folders/1SJsoiyeSjcMrvgqYyZhDJUzxgNBgI0lA">
 						Presskit
 					</Button>
-					<Button cursor alt bg="rgba(26, 14, 51, 0.72)" className="steam-button logo" ultra aria="spirit swap request a key form" to="https://k1zwm815u8b.typeform.com/to/CZBiZ0mu">
-						Request Key
-					</Button>
 				</div>
 			</div>
 			
@@ -97,7 +94,7 @@ const LandingKeyArt = () => (
 
 				.footer-container {
 					position: absolute;
-					bottom: -6rem;
+					bottom: -3rem;
 					max-width: 1700px;
 					width: 100%;
 					left: 50%;
