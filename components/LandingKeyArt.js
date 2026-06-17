@@ -97,7 +97,7 @@ const LandingKeyArt = () => (
 
 				.footer-container {
 					position: absolute;
-					bottom: -3rem;
+					bottom: -6rem;
 					max-width: 1700px;
 					width: 100%;
 					left: 50%;
