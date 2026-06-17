@@ -199,7 +199,7 @@ const LandingKeyArt = () => (
 					.gamelogo {
 						left: 50%;
 						transform: translateX(-50%);
-						top: unset;
+						top: 0rem;
 						bottom: 5rem;
 						width: 100vw;
 					}
