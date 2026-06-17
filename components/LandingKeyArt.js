@@ -212,7 +212,7 @@ const LandingKeyArt = () => (
 						display: grid;
 						justify-content: center;
 						grid-template-columns: repeat(3, auto);
-						gap: 0.5rem;
+						gap: 0.2rem;
 					}
 				}
 
