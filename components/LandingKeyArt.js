@@ -51,6 +51,7 @@ const LandingKeyArt = () => (
 		
 		<style jsx>
 			{`
+				
 				header { 
 					height: 94vh;
 				}
@@ -204,13 +205,13 @@ const LandingKeyArt = () => (
 					}
 
 					.gamelogo img {
-						width: 80%;
+						width: 60%;
 					}
 
 					.buttons {
 						display: grid;
 						justify-content: center;
-						grid-template-columns: repeat(2, 1fr);
+						grid-template-columns: repeat(3, auto);
 						gap: 0.5rem;
 					}
 				}
@@ -278,6 +279,12 @@ const LandingKeyArt = () => (
 
 			`}
 		</style>
+		<style jsx global>{`
+        html, body {
+			max-width: 100%;
+			overflow-x: hidden;
+		}
+      `}</style>
 	</header>
 )
 
